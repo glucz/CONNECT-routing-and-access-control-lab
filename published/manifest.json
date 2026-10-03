@@ -1,0 +1,26 @@
+{
+  "sha256": {
+    "campaigns.csv": "f4c09ee5f8e9c7f076485c4f3d10813c963bcc23d7f06d779e77266bd3301ac9",
+    "capacity/aggregates.json": "d21b98b64efd46c210d81344bc597e900e577fb0b462138e0f829845a6f874be",
+    "capacity/delivery.csv": "7913c4c0846a4c707e644646d72a56c4bb366d801974fc86e603dfe9b88bc0be",
+    "capacity/plan.json": "80a6f90196cea6f5f14f919c95b3f8ae7f45ff7e2b02985b83eb3a0a5c875f0b",
+    "capacity/prices.csv": "731e220f23b73e29f29b3a077cbee261959700fed8178e24a16314fa5a3edc61",
+    "capacity/README.md": "d43c0af1e19e1570e098ad9503e1a0c062fa54cc4644864a6beaf243a582d887",
+    "composition/aggregates.json": "989cfc7af4053fcd375492dc4ebf6de9d04cda949085d70e08527082d196a0e3",
+    "composition/delivery.csv": "e93fb4569e89af13af71ef5b490919d84661fa457d7dddc954e0627d89e7f31f",
+    "composition/plan.json": "747c594e489835fadad1dc172bd53d95d13d905d61f0adcb52325e0b228796f9",
+    "composition/prices.csv": "a67b356396592bd2c2b7a5b354c2a458951e4459b1e0e47f606c4c7b61a5eb75",
+    "composition/README.md": "1b4d45909eb5006f4121df20c494bdc625b971af396c231ad091ea63cb9161c5",
+    "rate-window/aggregates.json": "9f54992e12b546ef76d95f6831a4f727fd551109efef66859486d17c2b2fde22",
+    "rate-window/delivery.csv": "d9b7ad7492c625d3c87b1ee99bf003da77c97fe7feef54772b526ed410c53c90",
+    "rate-window/plan.json": "13c11c0a6d4b62cc61fa3a1289ef85976eaac48a5886204bd71959525d99b58c",
+    "rate-window/README.md": "10bd40de7c95467da11173601caf841225fa98a731c08253bb9e8782c9310339",
+    "rate-window/timeline.csv": "562960681f82c460f60d02109062fde150ea3e12ae54db41182c1e9efc4aa5d3",
+    "README.md": "02201471084513b9f685e4d2690e08d0ad239a426c60bb874578494f596572b5",
+    "reconnect/aggregates.json": "b24ef883df6647d3a3b3276cf3157cf4937de4b220bce9623c1a4eeb9d439a68",
+    "reconnect/delivery.csv": "5c675b52d0a5f542e2b01c8cc2363fdb676d6ec17106191c71b56fe876dda1e7",
+    "reconnect/plan.json": "a3be405b599ecfb7f28e293e405824564d861b440f3cc022112af4da6b7ae410",
+    "reconnect/README.md": "10bd40de7c95467da11173601caf841225fa98a731c08253bb9e8782c9310339",
+    "reconnect/timeline.csv": "9293820bd8544f7d596d244fc255c17aa4d76bd4e68e4f31b76979deef2f53d8"
+  }
+}

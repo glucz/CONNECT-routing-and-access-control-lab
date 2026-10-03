@@ -1,0 +1,266 @@
+{
+  "_README": "Minimal frozen price inputs for standalone configuration generation. Prices are historical scenarios, not current quotes.",
+  "prices": {
+    "_source": "analysis/price_series/posted_prices.json (208 records); rule: tools/build_calibration_inputs.py EXCLUDE",
+    "residential_by_provider": {
+      "Bright Data": {
+        "smallest": 8,
+        "smallest_plan": "Pay as you go (list price)",
+        "largest": 5,
+        "largest_plan": "$1,999/month plan (list) - largest self-serve"
+      },
+      "DataImpulse": {
+        "smallest": 1,
+        "smallest_plan": "Intro $5 (5 GB) / Basic $50 (50 GB), pay-as-you-go",
+        "largest": 0.8,
+        "largest_plan": "Advanced $800 (1 TB) - largest self-serve"
+      },
+      "Decodo (formerly Smartproxy)": {
+        "smallest": 4,
+        "smallest_plan": "Pay as you go",
+        "largest": 2,
+        "largest_plan": "Enterprise 1000 GB - largest self-serve"
+      },
+      "Evomi": {
+        "smallest": 0.99,
+        "smallest_plan": "Pay as you go (from 15 GB)",
+        "largest": 0.49,
+        "largest_plan": "Monthly plan 100 GB (only subscription tier)"
+      },
+      "IPRoyal": {
+        "smallest": 7.35,
+        "smallest_plan": "Pay As You Go 1GB (smallest)",
+        "largest": 1.84,
+        "largest_plan": "Pay As You Go, custom volume from 10 TB - largest published"
+      },
+      "Infatica": {
+        "smallest": 4,
+        "smallest_plan": "Pay As You Go",
+        "largest": 2.6,
+        "largest_plan": "1000 GB/month - largest self-serve (monthly billing)"
+      },
+      "Massive": {
+        "smallest": 8,
+        "smallest_plan": "Starter 10 GB (smallest; no PAYG)",
+        "largest": 4.9,
+        "largest_plan": "Pro 100 GB - largest self-serve with a posted price"
+      },
+      "Oxylabs": {
+        "smallest": 6,
+        "smallest_plan": "Starter (smallest self-serve; no PAYG card shown)",
+        "largest": 2.5,
+        "largest_plan": "Corporate - largest self-serve"
+      },
+      "PacketStream": {
+        "smallest": 1,
+        "smallest_plan": "Flat rate, $50 minimum purchase (no tiers)",
+        "largest": 1,
+        "largest_plan": "Flat rate, $50 minimum purchase (no tiers)"
+      },
+      "Proxy-Seller": {
+        "smallest": 3.5,
+        "smallest_plan": "1 GB (smallest; valid 30 days)",
+        "largest": 1.45,
+        "largest_plan": "1000 GB - largest self-serve"
+      },
+      "Rayobyte": {
+        "smallest": 3.5,
+        "smallest_plan": "Starter 1-49 GB (smallest)",
+        "largest": 0.7,
+        "largest_plan": "Corporate 1000-4999 GB - largest self-serve"
+      },
+      "SOAX": {
+        "smallest": 5.0,
+        "smallest_plan": "Sandbox (no subscription; top-up credits)",
+        "largest": 0.85,
+        "largest_plan": "Enterprise (Monthly, self-serve) - largest self-serve"
+      },
+      "Webshare": {
+        "smallest": 3.5,
+        "smallest_plan": "1 GB/month (smallest; no PAYG)",
+        "largest": 1.4,
+        "largest_plan": "3,000 GB/month - largest self-serve"
+      }
+    },
+    "residential_smallest_commitment_usd_per_gb": {
+      "min": 0.99,
+      "median": 4,
+      "max": 8,
+      "n": 13
+    },
+    "residential_largest_tier_usd_per_gb": {
+      "min": 0.49,
+      "median": 1.45,
+      "max": 5,
+      "n": 13
+    },
+    "isp_usd_per_ip_month_largest_plan": {
+      "min": 0.225,
+      "median": 1.25,
+      "max": 4.6,
+      "n": 8
+    },
+    "datacenter_usd_per_ip_month_largest_plan": {
+      "min": 0.0179,
+      "median": 0.8,
+      "max": 1.39,
+      "n": 6
+    },
+    "vpn_1month_usd": {
+      "min": 11.95,
+      "median": 13.99,
+      "max": 16.45,
+      "n": 4
+    },
+    "vpn_longest_plan_effective_usd_per_month": {
+      "min": 2.03,
+      "median": 2.34,
+      "max": 2.99,
+      "n": 4
+    },
+    "residential_history": {
+      "Bright Data": {
+        "2020-06-14": {
+          "highest": 12.5,
+          "lowest": 3.0
+        },
+        "2021-07-14": {
+          "highest": 15.0,
+          "lowest": 8.5
+        },
+        "2022-07-11": {
+          "highest": 15.0,
+          "lowest": 10.5
+        },
+        "2023-07-20": {
+          "highest": 15.0,
+          "lowest": 11.25
+        },
+        "2024-08-22": {
+          "highest": 8.4,
+          "lowest": 5.88
+        },
+        "2025-05-12": {
+          "highest": 8.4,
+          "lowest": 5.88
+        },
+        "2026-01-15": {
+          "highest": 8.0,
+          "lowest": 5.0
+        },
+        "2026-09-29": {
+          "highest": 8,
+          "lowest": 5
+        }
+      },
+      "Decodo (formerly Smartproxy)": {
+        "2019-07-19": {
+          "highest": 15,
+          "lowest": 6
+        },
+        "2020-06-07": {
+          "highest": 15,
+          "lowest": 5
+        },
+        "2021-05-23": {
+          "highest": 15,
+          "lowest": 4
+        },
+        "2022-11-09": {
+          "highest": 12.5,
+          "lowest": 8
+        },
+        "2023-06-09": {
+          "highest": 8.5,
+          "lowest": 5.2
+        },
+        "2024-07-20": {
+          "highest": 7,
+          "lowest": 4.5
+        },
+        "2026-01-15": {
+          "highest": 3.5,
+          "lowest": 3.0
+        },
+        "2026-09-29": {
+          "highest": 4,
+          "lowest": 2
+        }
+      },
+      "Oxylabs": {
+        "2019-08-10": {
+          "highest": 12,
+          "lowest": 5
+        },
+        "2020-07-10": {
+          "highest": 15,
+          "lowest": 5
+        },
+        "2021-08-01": {
+          "highest": 15,
+          "lowest": 15
+        },
+        "2022-07-13": {
+          "highest": 15,
+          "lowest": 15
+        },
+        "2023-05-30": {
+          "highest": 15,
+          "lowest": 8
+        },
+        "2024-07-07": {
+          "highest": 8,
+          "lowest": 4
+        },
+        "2025-06-26": {
+          "highest": 8,
+          "lowest": 6.98
+        },
+        "2026-01-16": {
+          "highest": 8,
+          "lowest": 8
+        },
+        "2026-03-24": {
+          "highest": 6,
+          "lowest": 2.5
+        },
+        "2026-09-29": {
+          "highest": 6,
+          "lowest": 2.5
+        }
+      },
+      "NetNut": {
+        "2021-05-09": {
+          "highest": 15,
+          "lowest": 4
+        },
+        "2022-07-05": {
+          "highest": 15,
+          "lowest": 4
+        },
+        "2023-02-06": {
+          "highest": 20,
+          "lowest": 4
+        },
+        "2024-04-26": {
+          "highest": 15,
+          "lowest": 4
+        },
+        "2025-04-27": {
+          "highest": 3.53,
+          "lowest": 1.87
+        },
+        "2026-02-25": {
+          "highest": 3.53,
+          "lowest": 1.87
+        }
+      }
+    }
+  },
+  "c0_usd_per_gb": {
+    "value": [
+      2.76e-05,
+      0.12
+    ]
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "workload": "scrape",
+  "routing": "R-clean-stick",
+  "count": 1000,
+  "body_bytes": 26227,
+  "reuse": 25,
+  "sessions": 1,
+  "timeout_s": 30,
+  "ca_file": "lab-ca.pem",
+  "cookie_name": "lab_session",
+  "proxies": {"clean-stick": 3128, "clean-rot": 3129, "dirty-stick": 3130},
+  "targets": {
+    "login": {"host": "login.lab.example", "port": 443, "path": "/login"},
+    "manifest": {"host": "manifest.lab.example", "port": 443, "path": "/manifest"},
+    "seg": {"host": "seg.lab.example", "port": 443, "path": "/seg/{index}"}
+  }
+}

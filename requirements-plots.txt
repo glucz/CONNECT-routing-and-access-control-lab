@@ -1,0 +1,2 @@
+# Optional SVG/PNG exports.
+matplotlib>=3.8

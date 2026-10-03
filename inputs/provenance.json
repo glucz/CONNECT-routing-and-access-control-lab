@@ -1,0 +1,7 @@
+{
+  "date": "2026-09-29",
+  "selection_rule": "minimum eligible per-GB quote per provider, then median",
+  "original_calibration_sha256": "412a5092a11f1ea10f9cd9bffa73454bf49b07d0537c0269dccad16a8160b7a1",
+  "original_full_price_csv_sha256": "6e445e0ba4a9cb17ccf240f797cdb29bac27faeb624563ceda6ab707330ca728",
+  "note": "This repository bundles a subset. Hashes above identify the original full paper inputs, not these subset files."
+}

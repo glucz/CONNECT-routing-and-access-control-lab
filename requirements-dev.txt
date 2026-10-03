@@ -1,0 +1,2 @@
+# Preparation and local TLS tests only; runtime is Python 3.11+ stdlib.
+cryptography>=41

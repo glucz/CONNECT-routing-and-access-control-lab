@@ -1,0 +1,5933 @@
+{
+  "mode": "temporal",
+  "campaign_status": "complete",
+  "attempts": 48,
+  "network": {
+    "origin": {
+      "available": true,
+      "interfaces": {
+        "enp1s0": {
+          "rx_bytes": 2254131,
+          "tx_bytes": 5159027,
+          "rx_packets": 9651,
+          "tx_packets": 7807
+        }
+      },
+      "note": "All traffic on each interface, including SSH/control/NDP and background traffic; do not sum overlapping virtual/physical interfaces. Null means counter reset."
+    },
+    "client": {
+      "available": true,
+      "interfaces": {
+        "enp1s0": {
+          "rx_bytes": 5667959,
+          "tx_bytes": 4236166,
+          "rx_packets": 14505,
+          "tx_packets": 24366
+        }
+      },
+      "note": "All traffic on each interface, including SSH/control/NDP and background traffic; do not sum overlapping virtual/physical interfaces. Null means counter reset."
+    }
+  },
+  "proxy_bytes_all_attempts": 5042554,
+  "accounting_discrepancies_over_one_percent": 0,
+  "prices": {
+    "clean_usd_per_gb": 1.45,
+    "dirty_usd_per_gb": 0.38,
+    "held_usd_per_address_month": 1.25,
+    "own_path_range": [
+      2.76e-05,
+      0.12
+    ]
+  },
+  "notes": [
+    "Costs are listed-price scenarios, not provider bills or total operating costs.",
+    "Dedicated-address cost reserves each observed clean address for a whole month; no pooling or amortization assumed.",
+    "Intervals and unadjusted directional tests describe repeated deterministic lab runs, not real-service prevalence.",
+    "Proxy bytes include TLS/framing in both directions; body reconciliation compares client with origin only.",
+    "Interrupted campaigns and invalid runs are not silently counted as defender failures."
+  ],
+  "cells": [
+    {
+      "block": "rate-window",
+      "workload": "scrape",
+      "defender": "every",
+      "routing": "R-clean-stick",
+      "sessions": 1,
+      "count": 31,
+      "body_bytes": 1024,
+      "manifest_bytes": 32,
+      "reuse": 1,
+      "limit": 10,
+      "window_s": 2,
+      "request_interval_s": 0.4,
+      "reconnect_every": 0,
+      "reconnect_source": "hold",
+      "cell_id": "time-rate-window-000",
+      "ideal_records_ok": 31,
+      "planned": 1,
+      "completed": 1,
+      "valid": 1,
+      "successes": 1,
+      "success_rate": 1.0,
+      "success_wilson95": [
+        0.20654931437723745,
+        1
+      ],
+      "invalid": 0,
+      "missing": 0,
+      "max_body_discrepancy": 0.0,
+      "complete_deliveries": 1,
+      "successes_99": 1,
+      "delivery_fraction_all_valid_runs": {
+        "n": 1,
+        "mean": 1.0,
+        "median": 1.0,
+        "min": 1.0,
+        "max": 1.0
+      },
+      "duration_s_all_valid_runs": {
+        "n": 1,
+        "mean": 12.414628956990782,
+        "median": 12.414628956990782,
+        "min": 12.414628956990782,
+        "max": 12.414628956990782
+      },
+      "clean_bytes_among_complete": {
+        "n": 1,
+        "mean": 161163,
+        "median": 161163,
+        "min": 161163,
+        "max": 161163
+      },
+      "dirty_bytes_among_complete": {
+        "n": 1,
+        "mean": 0,
+        "median": 0,
+        "min": 0,
+        "max": 0
+      },
+      "clean_addresses_among_complete": {
+        "n": 1,
+        "mean": 1,
+        "median": 1,
+        "min": 1,
+        "max": 1
+      },
+      "clean_bytes_among_successes": {
+        "n": 1,
+        "mean": 161163,
+        "median": 161163,
+        "min": 161163,
+        "max": 161163
+      },
+      "dirty_bytes_among_successes": {
+        "n": 1,
+        "mean": 0,
+        "median": 0,
+        "min": 0,
+        "max": 0
+      },
+      "clean_addresses_among_successes": {
+        "n": 1,
+        "mean": 1,
+        "median": 1,
+        "min": 1,
+        "max": 1
+      },
+      "clean_share_among_successes": {
+        "n": 1,
+        "mean": 1.0,
+        "median": 1.0,
+        "min": 1.0,
+        "max": 1.0
+      },
+      "addresses_used_among_successes": {
+        "n": 1,
+        "mean": 1,
+        "median": 1,
+        "min": 1,
+        "max": 1
+      },
+      "tunnel_bytes_among_successes": {
+        "n": 1,
+        "mean": 161163,
+        "median": 161163,
+        "min": 161163,
+        "max": 161163
+      },
+      "transfer_usd_among_successes": {
+        "n": 1,
+        "mean": 0.00023368635,
+        "median": 0.00023368635,
+        "min": 0.00023368635,
+        "max": 0.00023368635
+      },
+      "own_path_low_usd_among_successes": {
+        "n": 1,
+        "mean": 0.00023368635,
+        "median": 0.00023368635,
+        "min": 0.00023368635,
+        "max": 0.00023368635
+      },
+      "own_path_high_usd_among_successes": {
+        "n": 1,
+        "mean": 0.00023368635,
+        "median": 0.00023368635,
+        "min": 0.00023368635,
+        "max": 0.00023368635
+      },
+      "dedicated_address_month_usd_among_successes": {
+        "n": 1,
+        "mean": 1.25,
+        "median": 1.25,
+        "min": 1.25,
+        "max": 1.25
+      },
+      "addresses_per_session_among_successes": {
+        "n": 1,
+        "mean": 1,
+        "median": 1,
+        "min": 1,
+        "max": 1
+      },
+      "addresses_used_all_valid_runs": {
+        "n": 1,
+        "mean": 1,
+        "median": 1,
+        "min": 1,
+        "max": 1
+      },
+      "tunnel_bytes_all_valid_runs": {
+        "n": 1,
+        "mean": 161163,
+        "median": 161163,
+        "min": 161163,
+        "max": 161163
+      },
+      "transfer_usd_all_valid_runs": {
+        "n": 1,
+        "mean": 0.00023368635,
+        "median": 0.00023368635,
+        "min": 0.00023368635,
+        "max": 0.00023368635
+      },
+      "observed_sessions_all_valid_runs": 1,
+      "mixed_source_sessions_all_valid_runs": 0
+    },
+    {
+      "block": "rate-window",
+      "workload": "scrape",
+      "defender": "every",
+      "routing": "R-clean-stick",
+      "sessions": 1,
+      "count": 31,
+      "body_bytes": 1024,
+      "manifest_bytes": 32,
+      "reuse": 10,
+      "limit": 10,
+      "window_s": 2,
+      "request_interval_s": 0.4,
+      "reconnect_every": 0,
+      "reconnect_source": "hold",
+      "cell_id": "time-rate-window-001",
+      "ideal_records_ok": 31,
+      "planned": 1,
+      "completed": 1,
+      "valid": 1,
+      "successes": 1,
+      "success_rate": 1.0,
+      "success_wilson95": [
+        0.20654931437723745,
+        1
+      ],
+      "invalid": 0,
+      "missing": 0,
+      "max_body_discrepancy": 0.0,
+      "complete_deliveries": 1,
+      "successes_99": 1,
+      "delivery_fraction_all_valid_runs": {
+        "n": 1,
+        "mean": 1.0,
+        "median": 1.0,
+        "min": 1.0,
+        "max": 1.0
+      },
+      "duration_s_all_valid_runs": {
+        "n": 1,
+        "mean": 12.41399224899942,
+        "median": 12.41399224899942,
+        "min": 12.41399224899942,
+        "max": 12.41399224899942
+      },
+      "clean_bytes_among_complete": {
+        "n": 1,
+        "mean": 69448,
+        "median": 69448,
+        "min": 69448,
+        "max": 69448
+      },
+      "dirty_bytes_among_complete": {
+        "n": 1,
+        "mean": 0,
+        "median": 0,
+        "min": 0,
+        "max": 0
+      },
+      "clean_addresses_among_complete": {
+        "n": 1,
+        "mean": 1,
+        "median": 1,
+        "min": 1,
+        "max": 1
+      },
+      "clean_bytes_among_successes": {
+        "n": 1,
+        "mean": 69448,
+        "median": 69448,
+        "min": 69448,
+        "max": 69448
+      },
+      "dirty_bytes_among_successes": {
+        "n": 1,
+        "mean": 0,
+        "median": 0,
+        "min": 0,
+        "max": 0
+      },
+      "clean_addresses_among_successes": {
+        "n": 1,
+        "mean": 1,
+        "median": 1,
+        "min": 1,
+        "max": 1
+      },
+      "clean_share_among_successes": {
+        "n": 1,
+        "mean": 1.0,
+        "median": 1.0,
+        "min": 1.0,
+        "max": 1.0
+      },
+      "addresses_used_among_successes": {
+        "n": 1,
+        "mean": 1,
+        "median": 1,
+        "min": 1,
+        "max": 1
+      },
+      "tunnel_bytes_among_successes": {
+        "n": 1,
+        "mean": 69448,
+        "median": 69448,
+        "min": 69448,
+        "max": 69448
+      },
+      "transfer_usd_among_successes": {
+        "n": 1,
+        "mean": 0.0001006996,
+        "median": 0.0001006996,
+        "min": 0.0001006996,
+        "max": 0.0001006996
+      },
+      "own_path_low_usd_among_successes": {
+        "n": 1,
+        "mean": 0.0001006996,
+        "median": 0.0001006996,
+        "min": 0.0001006996,
+        "max": 0.0001006996
+      },
+      "own_path_high_usd_among_successes": {
+        "n": 1,
+        "mean": 0.0001006996,
+        "median": 0.0001006996,
+        "min": 0.0001006996,
+        "max": 0.0001006996
+      },
+      "dedicated_address_month_usd_among_successes": {
+        "n": 1,
+        "mean": 1.25,
+        "median": 1.25,
+        "min": 1.25,
+        "max": 1.25
+      },
+      "addresses_per_session_among_successes": {
+        "n": 1,
+        "mean": 1,
+        "median": 1,
+        "min": 1,
+        "max": 1
+      },
+      "addresses_used_all_valid_runs": {
+        "n": 1,
+        "mean": 1,
+        "median": 1,
+        "min": 1,
+        "max": 1
+      },
+      "tunnel_bytes_all_valid_runs": {
+        "n": 1,
+        "mean": 69448,
+        "median": 69448,
+        "min": 69448,
+        "max": 69448
+      },
+      "transfer_usd_all_valid_runs": {
+        "n": 1,
+        "mean": 0.0001006996,
+        "median": 0.0001006996,
+        "min": 0.0001006996,
+        "max": 0.0001006996
+      },
+      "observed_sessions_all_valid_runs": 1,
+      "mixed_source_sessions_all_valid_runs": 0
+    },
+    {
+      "block": "rate-window",
+      "workload": "scrape",
+      "defender": "every",
+      "routing": "R-clean-rot",
+      "sessions": 1,
+      "count": 31,
+      "body_bytes": 1024,
+      "manifest_bytes": 32,
+      "reuse": 1,
+      "limit": 10,
+      "window_s": 2,
+      "request_interval_s": 0.4,
+      "reconnect_every": 0,
+      "reconnect_source": "hold",
+      "cell_id": "time-rate-window-002",
+      "ideal_records_ok": 31,
+      "planned": 1,
+      "completed": 1,
+      "valid": 1,
+      "successes": 1,
+      "success_rate": 1.0,
+      "success_wilson95": [
+        0.20654931437723745,
+        1
+      ],
+      "invalid": 0,
+      "missing": 0,
+      "max_body_discrepancy": 0.0,
+      "complete_deliveries": 1,
+      "successes_99": 1,
+      "delivery_fraction_all_valid_runs": {
+        "n": 1,
+        "mean": 1.0,
+        "median": 1.0,
+        "min": 1.0,
+        "max": 1.0
+      },
+      "duration_s_all_valid_runs": {
+        "n": 1,
+        "mean": 12.413918716003536,
+        "median": 12.413918716003536,
+        "min": 12.413918716003536,
+        "max": 12.413918716003536
+      },
+      "clean_bytes_among_complete": {
+        "n": 1,
+        "mean": 161163,
+        "median": 161163,
+        "min": 161163,
+        "max": 161163
+      },
+      "dirty_bytes_among_complete": {
+        "n": 1,
+        "mean": 0,
+        "median": 0,
+        "min": 0,
+        "max": 0
+      },
+      "clean_addresses_among_complete": {
+        "n": 1,
+        "mean": 32,
+        "median": 32,
+        "min": 32,
+        "max": 32
+      },
+      "clean_bytes_among_successes": {
+        "n": 1,
+        "mean": 161163,
+        "median": 161163,
+        "min": 161163,
+        "max": 161163
+      },
+      "dirty_bytes_among_successes": {
+        "n": 1,
+        "mean": 0,
+        "median": 0,
+        "min": 0,
+        "max": 0
+      },
+      "clean_addresses_among_successes": {
+        "n": 1,
+        "mean": 32,
+        "median": 32,
+        "min": 32,
+        "max": 32
+      },
+      "clean_share_among_successes": {
+        "n": 1,
+        "mean": 1.0,
+        "median": 1.0,
+        "min": 1.0,
+        "max": 1.0
+      },
+      "addresses_used_among_successes": {
+        "n": 1,
+        "mean": 32,
+        "median": 32,
+        "min": 32,
+        "max": 32
+      },
+      "tunnel_bytes_among_successes": {
+        "n": 1,
+        "mean": 161163,
+        "median": 161163,
+        "min": 161163,
+        "max": 161163
+      },
+      "transfer_usd_among_successes": {
+        "n": 1,
+        "mean": 0.00023368635,
+        "median": 0.00023368635,
+        "min": 0.00023368635,
+        "max": 0.00023368635
+      },
+      "own_path_low_usd_among_successes": {
+        "n": 1,
+        "mean": 0.00023368635,
+        "median": 0.00023368635,
+        "min": 0.00023368635,
+        "max": 0.00023368635
+      },
+      "own_path_high_usd_among_successes": {
+        "n": 1,
+        "mean": 0.00023368635,
+        "median": 0.00023368635,
+        "min": 0.00023368635,
+        "max": 0.00023368635
+      },
+      "dedicated_address_month_usd_among_successes": null,
+      "addresses_per_session_among_successes": {
+        "n": 1,
+        "mean": 32,
+        "median": 32,
+        "min": 32,
+        "max": 32
+      },
+      "addresses_used_all_valid_runs": {
+        "n": 1,
+        "mean": 32,
+        "median": 32,
+        "min": 32,
+        "max": 32
+      },
+      "tunnel_bytes_all_valid_runs": {
+        "n": 1,
+        "mean": 161163,
+        "median": 161163,
+        "min": 161163,
+        "max": 161163
+      },
+      "transfer_usd_all_valid_runs": {
+        "n": 1,
+        "mean": 0.00023368635,
+        "median": 0.00023368635,
+        "min": 0.00023368635,
+        "max": 0.00023368635
+      },
+      "observed_sessions_all_valid_runs": 1,
+      "mixed_source_sessions_all_valid_runs": 1
+    },
+    {
+      "block": "rate-window",
+      "workload": "scrape",
+      "defender": "every",
+      "routing": "R-clean-rot",
+      "sessions": 1,
+      "count": 31,
+      "body_bytes": 1024,
+      "manifest_bytes": 32,
+      "reuse": 10,
+      "limit": 10,
+      "window_s": 2,
+      "request_interval_s": 0.4,
+      "reconnect_every": 0,
+      "reconnect_source": "hold",
+      "cell_id": "time-rate-window-003",
+      "ideal_records_ok": 31,
+      "planned": 1,
+      "completed": 1,
+      "valid": 1,
+      "successes": 1,
+      "success_rate": 1.0,
+      "success_wilson95": [
+        0.20654931437723745,
+        1
+      ],
+      "invalid": 0,
+      "missing": 0,
+      "max_body_discrepancy": 0.0,
+      "complete_deliveries": 1,
+      "successes_99": 1,
+      "delivery_fraction_all_valid_runs": {
+        "n": 1,
+        "mean": 1.0,
+        "median": 1.0,
+        "min": 1.0,
+        "max": 1.0
+      },
+      "duration_s_all_valid_runs": {
+        "n": 1,
+        "mean": 12.414643747004448,
+        "median": 12.414643747004448,
+        "min": 12.414643747004448,
+        "max": 12.414643747004448
+      },
+      "clean_bytes_among_complete": {
+        "n": 1,
+        "mean": 69448,
+        "median": 69448,
+        "min": 69448,
+        "max": 69448
+      },
+      "dirty_bytes_among_complete": {
+        "n": 1,
+        "mean": 0,
+        "median": 0,
+        "min": 0,
+        "max": 0
+      },
+      "clean_addresses_among_complete": {
+        "n": 1,
+        "mean": 5,
+        "median": 5,
+        "min": 5,
+        "max": 5
+      },
+      "clean_bytes_among_successes": {
+        "n": 1,
+        "mean": 69448,
+        "median": 69448,
+        "min": 69448,
+        "max": 69448
+      },
+      "dirty_bytes_among_successes": {
+        "n": 1,
+        "mean": 0,
+        "median": 0,
+        "min": 0,
+        "max": 0
+      },
+      "clean_addresses_among_successes": {
+        "n": 1,
+        "mean": 5,
+        "median": 5,
+        "min": 5,
+        "max": 5
+      },
+      "clean_share_among_successes": {
+        "n": 1,
+        "mean": 1.0,
+        "median": 1.0,
+        "min": 1.0,
+        "max": 1.0
+      },
+      "addresses_used_among_successes": {
+        "n": 1,
+        "mean": 5,
+        "median": 5,
+        "min": 5,
+        "max": 5
+      },
+      "tunnel_bytes_among_successes": {
+        "n": 1,
+        "mean": 69448,
+        "median": 69448,
+        "min": 69448,
+        "max": 69448
+      },
+      "transfer_usd_among_successes": {
+        "n": 1,
+        "mean": 0.0001006996,
+        "median": 0.0001006996,
+        "min": 0.0001006996,
+        "max": 0.0001006996
+      },
+      "own_path_low_usd_among_successes": {
+        "n": 1,
+        "mean": 0.0001006996,
+        "median": 0.0001006996,
+        "min": 0.0001006996,
+        "max": 0.0001006996
+      },
+      "own_path_high_usd_among_successes": {
+        "n": 1,
+        "mean": 0.0001006996,
+        "median": 0.0001006996,
+        "min": 0.0001006996,
+        "max": 0.0001006996
+      },
+      "dedicated_address_month_usd_among_successes": null,
+      "addresses_per_session_among_successes": {
+        "n": 1,
+        "mean": 5,
+        "median": 5,
+        "min": 5,
+        "max": 5
+      },
+      "addresses_used_all_valid_runs": {
+        "n": 1,
+        "mean": 5,
+        "median": 5,
+        "min": 5,
+        "max": 5
+      },
+      "tunnel_bytes_all_valid_runs": {
+        "n": 1,
+        "mean": 69448,
+        "median": 69448,
+        "min": 69448,
+        "max": 69448
+      },
+      "transfer_usd_all_valid_runs": {
+        "n": 1,
+        "mean": 0.0001006996,
+        "median": 0.0001006996,
+        "min": 0.0001006996,
+        "max": 0.0001006996
+      },
+      "observed_sessions_all_valid_runs": 1,
+      "mixed_source_sessions_all_valid_runs": 1
+    },
+    {
+      "block": "rate-window",
+      "workload": "scrape",
+      "defender": "bind",
+      "routing": "R-clean-stick",
+      "sessions": 1,
+      "count": 31,
+      "body_bytes": 1024,
+      "manifest_bytes": 32,
+      "reuse": 1,
+      "limit": 10,
+      "window_s": 2,
+      "request_interval_s": 0.4,
+      "reconnect_every": 0,
+      "reconnect_source": "hold",
+      "cell_id": "time-rate-window-004",
+      "ideal_records_ok": 31,
+      "planned": 1,
+      "completed": 1,
+      "valid": 1,
+      "successes": 1,
+      "success_rate": 1.0,
+      "success_wilson95": [
+        0.20654931437723745,
+        1
+      ],
+      "invalid": 0,
+      "missing": 0,
+      "max_body_discrepancy": 0.0,
+      "complete_deliveries": 1,
+      "successes_99": 1,
+      "delivery_fraction_all_valid_runs": {
+        "n": 1,
+        "mean": 1.0,
+        "median": 1.0,
+        "min": 1.0,
+        "max": 1.0
+      },
+      "duration_s_all_valid_runs": {
+        "n": 1,
+        "mean": 12.412912365994998,
+        "median": 12.412912365994998,
+        "min": 12.412912365994998,
+        "max": 12.412912365994998
+      },
+      "clean_bytes_among_complete": {
+        "n": 1,
+        "mean": 161163,
+        "median": 161163,
+        "min": 161163,
+        "max": 161163
+      },
+      "dirty_bytes_among_complete": {
+        "n": 1,
+        "mean": 0,
+        "median": 0,
+        "min": 0,
+        "max": 0
+      },
+      "clean_addresses_among_complete": {
+        "n": 1,
+        "mean": 1,
+        "median": 1,
+        "min": 1,
+        "max": 1
+      },
+      "clean_bytes_among_successes": {
+        "n": 1,
+        "mean": 161163,
+        "median": 161163,
+        "min": 161163,
+        "max": 161163
+      },
+      "dirty_bytes_among_successes": {
+        "n": 1,
+        "mean": 0,
+        "median": 0,
+        "min": 0,
+        "max": 0
+      },
+      "clean_addresses_among_successes": {
+        "n": 1,
+        "mean": 1,
+        "median": 1,
+        "min": 1,
+        "max": 1
+      },
+      "clean_share_among_successes": {
+        "n": 1,
+        "mean": 1.0,
+        "median": 1.0,
+        "min": 1.0,
+        "max": 1.0
+      },
+      "addresses_used_among_successes": {
+        "n": 1,
+        "mean": 1,
+        "median": 1,
+        "min": 1,
+        "max": 1
+      },
+      "tunnel_bytes_among_successes": {
+        "n": 1,
+        "mean": 161163,
+        "median": 161163,
+        "min": 161163,
+        "max": 161163
+      },
+      "transfer_usd_among_successes": {
+        "n": 1,
+        "mean": 0.00023368635,
+        "median": 0.00023368635,
+        "min": 0.00023368635,
+        "max": 0.00023368635
+      },
+      "own_path_low_usd_among_successes": {
+        "n": 1,
+        "mean": 0.00023368635,
+        "median": 0.00023368635,
+        "min": 0.00023368635,
+        "max": 0.00023368635
+      },
+      "own_path_high_usd_among_successes": {
+        "n": 1,
+        "mean": 0.00023368635,
+        "median": 0.00023368635,
+        "min": 0.00023368635,
+        "max": 0.00023368635
+      },
+      "dedicated_address_month_usd_among_successes": {
+        "n": 1,
+        "mean": 1.25,
+        "median": 1.25,
+        "min": 1.25,
+        "max": 1.25
+      },
+      "addresses_per_session_among_successes": {
+        "n": 1,
+        "mean": 1,
+        "median": 1,
+        "min": 1,
+        "max": 1
+      },
+      "addresses_used_all_valid_runs": {
+        "n": 1,
+        "mean": 1,
+        "median": 1,
+        "min": 1,
+        "max": 1
+      },
+      "tunnel_bytes_all_valid_runs": {
+        "n": 1,
+        "mean": 161163,
+        "median": 161163,
+        "min": 161163,
+        "max": 161163
+      },
+      "transfer_usd_all_valid_runs": {
+        "n": 1,
+        "mean": 0.00023368635,
+        "median": 0.00023368635,
+        "min": 0.00023368635,
+        "max": 0.00023368635
+      },
+      "observed_sessions_all_valid_runs": 1,
+      "mixed_source_sessions_all_valid_runs": 0
+    },
+    {
+      "block": "rate-window",
+      "workload": "scrape",
+      "defender": "bind",
+      "routing": "R-clean-stick",
+      "sessions": 1,
+      "count": 31,
+      "body_bytes": 1024,
+      "manifest_bytes": 32,
+      "reuse": 10,
+      "limit": 10,
+      "window_s": 2,
+      "request_interval_s": 0.4,
+      "reconnect_every": 0,
+      "reconnect_source": "hold",
+      "cell_id": "time-rate-window-005",
+      "ideal_records_ok": 31,
+      "planned": 1,
+      "completed": 1,
+      "valid": 1,
+      "successes": 1,
+      "success_rate": 1.0,
+      "success_wilson95": [
+        0.20654931437723745,
+        1
+      ],
+      "invalid": 0,
+      "missing": 0,
+      "max_body_discrepancy": 0.0,
+      "complete_deliveries": 1,
+      "successes_99": 1,
+      "delivery_fraction_all_valid_runs": {
+        "n": 1,
+        "mean": 1.0,
+        "median": 1.0,
+        "min": 1.0,
+        "max": 1.0
+      },
+      "duration_s_all_valid_runs": {
+        "n": 1,
+        "mean": 12.414130558012403,
+        "median": 12.414130558012403,
+        "min": 12.414130558012403,
+        "max": 12.414130558012403
+      },
+      "clean_bytes_among_complete": {
+        "n": 1,
+        "mean": 69448,
+        "median": 69448,
+        "min": 69448,
+        "max": 69448
+      },
+      "dirty_bytes_among_complete": {
+        "n": 1,
+        "mean": 0,
+        "median": 0,
+        "min": 0,
+        "max": 0
+      },
+      "clean_addresses_among_complete": {
+        "n": 1,
+        "mean": 1,
+        "median": 1,
+        "min": 1,
+        "max": 1
+      },
+      "clean_bytes_among_successes": {
+        "n": 1,
+        "mean": 69448,
+        "median": 69448,
+        "min": 69448,
+        "max": 69448
+      },
+      "dirty_bytes_among_successes": {
+        "n": 1,
+        "mean": 0,
+        "median": 0,
+        "min": 0,
+        "max": 0
+      },
+      "clean_addresses_among_successes": {
+        "n": 1,
+        "mean": 1,
+        "median": 1,
+        "min": 1,
+        "max": 1
+      },
+      "clean_share_among_successes": {
+        "n": 1,
+        "mean": 1.0,
+        "median": 1.0,
+        "min": 1.0,
+        "max": 1.0
+      },
+      "addresses_used_among_successes": {
+        "n": 1,
+        "mean": 1,
+        "median": 1,
+        "min": 1,
+        "max": 1
+      },
+      "tunnel_bytes_among_successes": {
+        "n": 1,
+        "mean": 69448,
+        "median": 69448,
+        "min": 69448,
+        "max": 69448
+      },
+      "transfer_usd_among_successes": {
+        "n": 1,
+        "mean": 0.0001006996,
+        "median": 0.0001006996,
+        "min": 0.0001006996,
+        "max": 0.0001006996
+      },
+      "own_path_low_usd_among_successes": {
+        "n": 1,
+        "mean": 0.0001006996,
+        "median": 0.0001006996,
+        "min": 0.0001006996,
+        "max": 0.0001006996
+      },
+      "own_path_high_usd_among_successes": {
+        "n": 1,
+        "mean": 0.0001006996,
+        "median": 0.0001006996,
+        "min": 0.0001006996,
+        "max": 0.0001006996
+      },
+      "dedicated_address_month_usd_among_successes": {
+        "n": 1,
+        "mean": 1.25,
+        "median": 1.25,
+        "min": 1.25,
+        "max": 1.25
+      },
+      "addresses_per_session_among_successes": {
+        "n": 1,
+        "mean": 1,
+        "median": 1,
+        "min": 1,
+        "max": 1
+      },
+      "addresses_used_all_valid_runs": {
+        "n": 1,
+        "mean": 1,
+        "median": 1,
+        "min": 1,
+        "max": 1
+      },
+      "tunnel_bytes_all_valid_runs": {
+        "n": 1,
+        "mean": 69448,
+        "median": 69448,
+        "min": 69448,
+        "max": 69448
+      },
+      "transfer_usd_all_valid_runs": {
+        "n": 1,
+        "mean": 0.0001006996,
+        "median": 0.0001006996,
+        "min": 0.0001006996,
+        "max": 0.0001006996
+      },
+      "observed_sessions_all_valid_runs": 1,
+      "mixed_source_sessions_all_valid_runs": 0
+    },
+    {
+      "block": "rate-window",
+      "workload": "scrape",
+      "defender": "bind",
+      "routing": "R-clean-rot",
+      "sessions": 1,
+      "count": 31,
+      "body_bytes": 1024,
+      "manifest_bytes": 32,
+      "reuse": 1,
+      "limit": 10,
+      "window_s": 2,
+      "request_interval_s": 0.4,
+      "reconnect_every": 0,
+      "reconnect_source": "hold",
+      "cell_id": "time-rate-window-006",
+      "ideal_records_ok": 0,
+      "planned": 1,
+      "completed": 1,
+      "valid": 1,
+      "successes": 0,
+      "success_rate": 0.0,
+      "success_wilson95": [
+        0,
+        0.7934506856227626
+      ],
+      "invalid": 0,
+      "missing": 0,
+      "max_body_discrepancy": 0.0,
+      "complete_deliveries": 0,
+      "successes_99": 0,
+      "delivery_fraction_all_valid_runs": {
+        "n": 1,
+        "mean": 0.0,
+        "median": 0.0,
+        "min": 0.0,
+        "max": 0.0
+      },
+      "duration_s_all_valid_runs": {
+        "n": 1,
+        "mean": 12.41692901600618,
+        "median": 12.41692901600618,
+        "min": 12.41692901600618,
+        "max": 12.41692901600618
+      },
+      "clean_bytes_among_complete": null,
+      "dirty_bytes_among_complete": null,
+      "clean_addresses_among_complete": null,
+      "clean_bytes_among_successes": null,
+      "dirty_bytes_among_successes": null,
+      "clean_addresses_among_successes": null,
+      "clean_share_among_successes": null,
+      "addresses_used_among_successes": null,
+      "tunnel_bytes_among_successes": null,
+      "transfer_usd_among_successes": null,
+      "own_path_low_usd_among_successes": null,
+      "own_path_high_usd_among_successes": null,
+      "dedicated_address_month_usd_among_successes": null,
+      "addresses_per_session_among_successes": null,
+      "addresses_used_all_valid_runs": {
+        "n": 1,
+        "mean": 32,
+        "median": 32,
+        "min": 32,
+        "max": 32
+      },
+      "tunnel_bytes_all_valid_runs": {
+        "n": 1,
+        "mean": 129047,
+        "median": 129047,
+        "min": 129047,
+        "max": 129047
+      },
+      "transfer_usd_all_valid_runs": {
+        "n": 1,
+        "mean": 0.00018711815,
+        "median": 0.00018711815,
+        "min": 0.00018711815,
+        "max": 0.00018711815
+      },
+      "observed_sessions_all_valid_runs": 1,
+      "mixed_source_sessions_all_valid_runs": 1
+    },
+    {
+      "block": "rate-window",
+      "workload": "scrape",
+      "defender": "bind",
+      "routing": "R-clean-rot",
+      "sessions": 1,
+      "count": 31,
+      "body_bytes": 1024,
+      "manifest_bytes": 32,
+      "reuse": 10,
+      "limit": 10,
+      "window_s": 2,
+      "request_interval_s": 0.4,
+      "reconnect_every": 0,
+      "reconnect_source": "hold",
+      "cell_id": "time-rate-window-007",
+      "ideal_records_ok": 0,
+      "planned": 1,
+      "completed": 1,
+      "valid": 1,
+      "successes": 0,
+      "success_rate": 0.0,
+      "success_wilson95": [
+        0,
+        0.7934506856227626
+      ],
+      "invalid": 0,
+      "missing": 0,
+      "max_body_discrepancy": 0.0,
+      "complete_deliveries": 0,
+      "successes_99": 0,
+      "delivery_fraction_all_valid_runs": {
+        "n": 1,
+        "mean": 0.0,
+        "median": 0.0,
+        "min": 0.0,
+        "max": 0.0
+      },
+      "duration_s_all_valid_runs": {
+        "n": 1,
+        "mean": 12.415180709998822,
+        "median": 12.415180709998822,
+        "min": 12.415180709998822,
+        "max": 12.415180709998822
+      },
+      "clean_bytes_among_complete": null,
+      "dirty_bytes_among_complete": null,
+      "clean_addresses_among_complete": null,
+      "clean_bytes_among_successes": null,
+      "dirty_bytes_among_successes": null,
+      "clean_addresses_among_successes": null,
+      "clean_share_among_successes": null,
+      "addresses_used_among_successes": null,
+      "tunnel_bytes_among_successes": null,
+      "transfer_usd_among_successes": null,
+      "own_path_low_usd_among_successes": null,
+      "own_path_high_usd_among_successes": null,
+      "dedicated_address_month_usd_among_successes": null,
+      "addresses_per_session_among_successes": null,
+      "addresses_used_all_valid_runs": {
+        "n": 1,
+        "mean": 5,
+        "median": 5,
+        "min": 5,
+        "max": 5
+      },
+      "tunnel_bytes_all_valid_runs": {
+        "n": 1,
+        "mean": 37332,
+        "median": 37332,
+        "min": 37332,
+        "max": 37332
+      },
+      "transfer_usd_all_valid_runs": {
+        "n": 1,
+        "mean": 5.41314e-05,
+        "median": 5.41314e-05,
+        "min": 5.41314e-05,
+        "max": 5.41314e-05
+      },
+      "observed_sessions_all_valid_runs": 1,
+      "mixed_source_sessions_all_valid_runs": 1
+    },
+    {
+      "block": "rate-window",
+      "workload": "scrape",
+      "defender": "every",
+      "routing": "R-clean-stick",
+      "sessions": 1,
+      "count": 31,
+      "body_bytes": 1024,
+      "manifest_bytes": 32,
+      "reuse": 1,
+      "limit": 10,
+      "window_s": 2,
+      "request_interval_s": 0.2,
+      "reconnect_every": 0,
+      "reconnect_source": "hold",
+      "cell_id": "time-rate-window-008",
+      "ideal_records_ok": 31,
+      "planned": 1,
+      "completed": 1,
+      "valid": 1,
+      "successes": 1,
+      "success_rate": 1.0,
+      "success_wilson95": [
+        0.20654931437723745,
+        1
+      ],
+      "invalid": 0,
+      "missing": 0,
+      "max_body_discrepancy": 0.0,
+      "complete_deliveries": 1,
+      "successes_99": 1,
+      "delivery_fraction_all_valid_runs": {
+        "n": 1,
+        "mean": 1.0,
+        "median": 1.0,
+        "min": 1.0,
+        "max": 1.0
+      },
+      "duration_s_all_valid_runs": {
+        "n": 1,
+        "mean": 6.213441359999706,
+        "median": 6.213441359999706,
+        "min": 6.213441359999706,
+        "max": 6.213441359999706
+      },
+      "clean_bytes_among_complete": {
+        "n": 1,
+        "mean": 161163,
+        "median": 161163,
+        "min": 161163,
+        "max": 161163
+      },
+      "dirty_bytes_among_complete": {
+        "n": 1,
+        "mean": 0,
+        "median": 0,
+        "min": 0,
+        "max": 0
+      },
+      "clean_addresses_among_complete": {
+        "n": 1,
+        "mean": 1,
+        "median": 1,
+        "min": 1,
+        "max": 1
+      },
+      "clean_bytes_among_successes": {
+        "n": 1,
+        "mean": 161163,
+        "median": 161163,
+        "min": 161163,
+        "max": 161163
+      },
+      "dirty_bytes_among_successes": {
+        "n": 1,
+        "mean": 0,
+        "median": 0,
+        "min": 0,
+        "max": 0
+      },
+      "clean_addresses_among_successes": {
+        "n": 1,
+        "mean": 1,
+        "median": 1,
+        "min": 1,
+        "max": 1
+      },
+      "clean_share_among_successes": {
+        "n": 1,
+        "mean": 1.0,
+        "median": 1.0,
+        "min": 1.0,
+        "max": 1.0
+      },
+      "addresses_used_among_successes": {
+        "n": 1,
+        "mean": 1,
+        "median": 1,
+        "min": 1,
+        "max": 1
+      },
+      "tunnel_bytes_among_successes": {
+        "n": 1,
+        "mean": 161163,
+        "median": 161163,
+        "min": 161163,
+        "max": 161163
+      },
+      "transfer_usd_among_successes": {
+        "n": 1,
+        "mean": 0.00023368635,
+        "median": 0.00023368635,
+        "min": 0.00023368635,
+        "max": 0.00023368635
+      },
+      "own_path_low_usd_among_successes": {
+        "n": 1,
+        "mean": 0.00023368635,
+        "median": 0.00023368635,
+        "min": 0.00023368635,
+        "max": 0.00023368635
+      },
+      "own_path_high_usd_among_successes": {
+        "n": 1,
+        "mean": 0.00023368635,
+        "median": 0.00023368635,
+        "min": 0.00023368635,
+        "max": 0.00023368635
+      },
+      "dedicated_address_month_usd_among_successes": {
+        "n": 1,
+        "mean": 1.25,
+        "median": 1.25,
+        "min": 1.25,
+        "max": 1.25
+      },
+      "addresses_per_session_among_successes": {
+        "n": 1,
+        "mean": 1,
+        "median": 1,
+        "min": 1,
+        "max": 1
+      },
+      "addresses_used_all_valid_runs": {
+        "n": 1,
+        "mean": 1,
+        "median": 1,
+        "min": 1,
+        "max": 1
+      },
+      "tunnel_bytes_all_valid_runs": {
+        "n": 1,
+        "mean": 161163,
+        "median": 161163,
+        "min": 161163,
+        "max": 161163
+      },
+      "transfer_usd_all_valid_runs": {
+        "n": 1,
+        "mean": 0.00023368635,
+        "median": 0.00023368635,
+        "min": 0.00023368635,
+        "max": 0.00023368635
+      },
+      "observed_sessions_all_valid_runs": 1,
+      "mixed_source_sessions_all_valid_runs": 0
+    },
+    {
+      "block": "rate-window",
+      "workload": "scrape",
+      "defender": "every",
+      "routing": "R-clean-stick",
+      "sessions": 1,
+      "count": 31,
+      "body_bytes": 1024,
+      "manifest_bytes": 32,
+      "reuse": 10,
+      "limit": 10,
+      "window_s": 2,
+      "request_interval_s": 0.2,
+      "reconnect_every": 0,
+      "reconnect_source": "hold",
+      "cell_id": "time-rate-window-009",
+      "ideal_records_ok": 31,
+      "planned": 1,
+      "completed": 1,
+      "valid": 1,
+      "successes": 0,
+      "success_rate": 0.0,
+      "success_wilson95": [
+        0,
+        0.7934506856227626
+      ],
+      "invalid": 0,
+      "missing": 0,
+      "max_body_discrepancy": 0.0,
+      "complete_deliveries": 0,
+      "successes_99": 0,
+      "delivery_fraction_all_valid_runs": {
+        "n": 1,
+        "mean": 0.967741935483871,
+        "median": 0.967741935483871,
+        "min": 0.967741935483871,
+        "max": 0.967741935483871
+      },
+      "duration_s_all_valid_runs": {
+        "n": 1,
+        "mean": 6.215327936006361,
+        "median": 6.215327936006361,
+        "min": 6.215327936006361,
+        "max": 6.215327936006361
+      },
+      "clean_bytes_among_complete": null,
+      "dirty_bytes_among_complete": null,
+      "clean_addresses_among_complete": null,
+      "clean_bytes_among_successes": null,
+      "dirty_bytes_among_successes": null,
+      "clean_addresses_among_successes": null,
+      "clean_share_among_successes": null,
+      "addresses_used_among_successes": null,
+      "tunnel_bytes_among_successes": null,
+      "transfer_usd_among_successes": null,
+      "own_path_low_usd_among_successes": null,
+      "own_path_high_usd_among_successes": null,
+      "dedicated_address_month_usd_among_successes": null,
+      "addresses_per_session_among_successes": null,
+      "addresses_used_all_valid_runs": {
+        "n": 1,
+        "mean": 1,
+        "median": 1,
+        "min": 1,
+        "max": 1
+      },
+      "tunnel_bytes_all_valid_runs": {
+        "n": 1,
+        "mean": 68403,
+        "median": 68403,
+        "min": 68403,
+        "max": 68403
+      },
+      "transfer_usd_all_valid_runs": {
+        "n": 1,
+        "mean": 9.918434999999999e-05,
+        "median": 9.918434999999999e-05,
+        "min": 9.918434999999999e-05,
+        "max": 9.918434999999999e-05
+      },
+      "observed_sessions_all_valid_runs": 1,
+      "mixed_source_sessions_all_valid_runs": 0
+    },
+    {
+      "block": "rate-window",
+      "workload": "scrape",
+      "defender": "every",
+      "routing": "R-clean-rot",
+      "sessions": 1,
+      "count": 31,
+      "body_bytes": 1024,
+      "manifest_bytes": 32,
+      "reuse": 1,
+      "limit": 10,
+      "window_s": 2,
+      "request_interval_s": 0.2,
+      "reconnect_every": 0,
+      "reconnect_source": "hold",
+      "cell_id": "time-rate-window-010",
+      "ideal_records_ok": 31,
+      "planned": 1,
+      "completed": 1,
+      "valid": 1,
+      "successes": 1,
+      "success_rate": 1.0,
+      "success_wilson95": [
+        0.20654931437723745,
+        1
+      ],
+      "invalid": 0,
+      "missing": 0,
+      "max_body_discrepancy": 0.0,
+      "complete_deliveries": 1,
+      "successes_99": 1,
+      "delivery_fraction_all_valid_runs": {
+        "n": 1,
+        "mean": 1.0,
+        "median": 1.0,
+        "min": 1.0,
+        "max": 1.0
+      },
+      "duration_s_all_valid_runs": {
+        "n": 1,
+        "mean": 6.214974742993945,
+        "median": 6.214974742993945,
+        "min": 6.214974742993945,
+        "max": 6.214974742993945
+      },
+      "clean_bytes_among_complete": {
+        "n": 1,
+        "mean": 161163,
+        "median": 161163,
+        "min": 161163,
+        "max": 161163
+      },
+      "dirty_bytes_among_complete": {
+        "n": 1,
+        "mean": 0,
+        "median": 0,
+        "min": 0,
+        "max": 0
+      },
+      "clean_addresses_among_complete": {
+        "n": 1,
+        "mean": 32,
+        "median": 32,
+        "min": 32,
+        "max": 32
+      },
+      "clean_bytes_among_successes": {
+        "n": 1,
+        "mean": 161163,
+        "median": 161163,
+        "min": 161163,
+        "max": 161163
+      },
+      "dirty_bytes_among_successes": {
+        "n": 1,
+        "mean": 0,
+        "median": 0,
+        "min": 0,
+        "max": 0
+      },
+      "clean_addresses_among_successes": {
+        "n": 1,
+        "mean": 32,
+        "median": 32,
+        "min": 32,
+        "max": 32
+      },
+      "clean_share_among_successes": {
+        "n": 1,
+        "mean": 1.0,
+        "median": 1.0,
+        "min": 1.0,
+        "max": 1.0
+      },
+      "addresses_used_among_successes": {
+        "n": 1,
+        "mean": 32,
+        "median": 32,
+        "min": 32,
+        "max": 32
+      },
+      "tunnel_bytes_among_successes": {
+        "n": 1,
+        "mean": 161163,
+        "median": 161163,
+        "min": 161163,
+        "max": 161163
+      },
+      "transfer_usd_among_successes": {
+        "n": 1,
+        "mean": 0.00023368635,
+        "median": 0.00023368635,
+        "min": 0.00023368635,
+        "max": 0.00023368635
+      },
+      "own_path_low_usd_among_successes": {
+        "n": 1,
+        "mean": 0.00023368635,
+        "median": 0.00023368635,
+        "min": 0.00023368635,
+        "max": 0.00023368635
+      },
+      "own_path_high_usd_among_successes": {
+        "n": 1,
+        "mean": 0.00023368635,
+        "median": 0.00023368635,
+        "min": 0.00023368635,
+        "max": 0.00023368635
+      },
+      "dedicated_address_month_usd_among_successes": null,
+      "addresses_per_session_among_successes": {
+        "n": 1,
+        "mean": 32,
+        "median": 32,
+        "min": 32,
+        "max": 32
+      },
+      "addresses_used_all_valid_runs": {
+        "n": 1,
+        "mean": 32,
+        "median": 32,
+        "min": 32,
+        "max": 32
+      },
+      "tunnel_bytes_all_valid_runs": {
+        "n": 1,
+        "mean": 161163,
+        "median": 161163,
+        "min": 161163,
+        "max": 161163
+      },
+      "transfer_usd_all_valid_runs": {
+        "n": 1,
+        "mean": 0.00023368635,
+        "median": 0.00023368635,
+        "min": 0.00023368635,
+        "max": 0.00023368635
+      },
+      "observed_sessions_all_valid_runs": 1,
+      "mixed_source_sessions_all_valid_runs": 1
+    },
+    {
+      "block": "rate-window",
+      "workload": "scrape",
+      "defender": "every",
+      "routing": "R-clean-rot",
+      "sessions": 1,
+      "count": 31,
+      "body_bytes": 1024,
+      "manifest_bytes": 32,
+      "reuse": 10,
+      "limit": 10,
+      "window_s": 2,
+      "request_interval_s": 0.2,
+      "reconnect_every": 0,
+      "reconnect_source": "hold",
+      "cell_id": "time-rate-window-011",
+      "ideal_records_ok": 31,
+      "planned": 1,
+      "completed": 1,
+      "valid": 1,
+      "successes": 1,
+      "success_rate": 1.0,
+      "success_wilson95": [
+        0.20654931437723745,
+        1
+      ],
+      "invalid": 0,
+      "missing": 0,
+      "max_body_discrepancy": 0.0,
+      "complete_deliveries": 1,
+      "successes_99": 1,
+      "delivery_fraction_all_valid_runs": {
+        "n": 1,
+        "mean": 1.0,
+        "median": 1.0,
+        "min": 1.0,
+        "max": 1.0
+      },
+      "duration_s_all_valid_runs": {
+        "n": 1,
+        "mean": 6.2131566220050445,
+        "median": 6.2131566220050445,
+        "min": 6.2131566220050445,
+        "max": 6.2131566220050445
+      },
+      "clean_bytes_among_complete": {
+        "n": 1,
+        "mean": 69448,
+        "median": 69448,
+        "min": 69448,
+        "max": 69448
+      },
+      "dirty_bytes_among_complete": {
+        "n": 1,
+        "mean": 0,
+        "median": 0,
+        "min": 0,
+        "max": 0
+      },
+      "clean_addresses_among_complete": {
+        "n": 1,
+        "mean": 5,
+        "median": 5,
+        "min": 5,
+        "max": 5
+      },
+      "clean_bytes_among_successes": {
+        "n": 1,
+        "mean": 69448,
+        "median": 69448,
+        "min": 69448,
+        "max": 69448
+      },
+      "dirty_bytes_among_successes": {
+        "n": 1,
+        "mean": 0,
+        "median": 0,
+        "min": 0,
+        "max": 0
+      },
+      "clean_addresses_among_successes": {
+        "n": 1,
+        "mean": 5,
+        "median": 5,
+        "min": 5,
+        "max": 5
+      },
+      "clean_share_among_successes": {
+        "n": 1,
+        "mean": 1.0,
+        "median": 1.0,
+        "min": 1.0,
+        "max": 1.0
+      },
+      "addresses_used_among_successes": {
+        "n": 1,
+        "mean": 5,
+        "median": 5,
+        "min": 5,
+        "max": 5
+      },
+      "tunnel_bytes_among_successes": {
+        "n": 1,
+        "mean": 69448,
+        "median": 69448,
+        "min": 69448,
+        "max": 69448
+      },
+      "transfer_usd_among_successes": {
+        "n": 1,
+        "mean": 0.0001006996,
+        "median": 0.0001006996,
+        "min": 0.0001006996,
+        "max": 0.0001006996
+      },
+      "own_path_low_usd_among_successes": {
+        "n": 1,
+        "mean": 0.0001006996,
+        "median": 0.0001006996,
+        "min": 0.0001006996,
+        "max": 0.0001006996
+      },
+      "own_path_high_usd_among_successes": {
+        "n": 1,
+        "mean": 0.0001006996,
+        "median": 0.0001006996,
+        "min": 0.0001006996,
+        "max": 0.0001006996
+      },
+      "dedicated_address_month_usd_among_successes": null,
+      "addresses_per_session_among_successes": {
+        "n": 1,
+        "mean": 5,
+        "median": 5,
+        "min": 5,
+        "max": 5
+      },
+      "addresses_used_all_valid_runs": {
+        "n": 1,
+        "mean": 5,
+        "median": 5,
+        "min": 5,
+        "max": 5
+      },
+      "tunnel_bytes_all_valid_runs": {
+        "n": 1,
+        "mean": 69448,
+        "median": 69448,
+        "min": 69448,
+        "max": 69448
+      },
+      "transfer_usd_all_valid_runs": {
+        "n": 1,
+        "mean": 0.0001006996,
+        "median": 0.0001006996,
+        "min": 0.0001006996,
+        "max": 0.0001006996
+      },
+      "observed_sessions_all_valid_runs": 1,
+      "mixed_source_sessions_all_valid_runs": 1
+    },
+    {
+      "block": "rate-window",
+      "workload": "scrape",
+      "defender": "bind",
+      "routing": "R-clean-stick",
+      "sessions": 1,
+      "count": 31,
+      "body_bytes": 1024,
+      "manifest_bytes": 32,
+      "reuse": 1,
+      "limit": 10,
+      "window_s": 2,
+      "request_interval_s": 0.2,
+      "reconnect_every": 0,
+      "reconnect_source": "hold",
+      "cell_id": "time-rate-window-012",
+      "ideal_records_ok": 31,
+      "planned": 1,
+      "completed": 1,
+      "valid": 1,
+      "successes": 0,
+      "success_rate": 0.0,
+      "success_wilson95": [
+        0,
+        0.7934506856227626
+      ],
+      "invalid": 0,
+      "missing": 0,
+      "max_body_discrepancy": 0.0,
+      "complete_deliveries": 0,
+      "successes_99": 0,
+      "delivery_fraction_all_valid_runs": {
+        "n": 1,
+        "mean": 0.967741935483871,
+        "median": 0.967741935483871,
+        "min": 0.967741935483871,
+        "max": 0.967741935483871
+      },
+      "duration_s_all_valid_runs": {
+        "n": 1,
+        "mean": 6.2261575699958485,
+        "median": 6.2261575699958485,
+        "min": 6.2261575699958485,
+        "max": 6.2261575699958485
+      },
+      "clean_bytes_among_complete": null,
+      "dirty_bytes_among_complete": null,
+      "clean_addresses_among_complete": null,
+      "clean_bytes_among_successes": null,
+      "dirty_bytes_among_successes": null,
+      "clean_addresses_among_successes": null,
+      "clean_share_among_successes": null,
+      "addresses_used_among_successes": null,
+      "tunnel_bytes_among_successes": null,
+      "transfer_usd_among_successes": null,
+      "own_path_low_usd_among_successes": null,
+      "own_path_high_usd_among_successes": null,
+      "dedicated_address_month_usd_among_successes": null,
+      "addresses_per_session_among_successes": null,
+      "addresses_used_all_valid_runs": {
+        "n": 1,
+        "mean": 1,
+        "median": 1,
+        "min": 1,
+        "max": 1
+      },
+      "tunnel_bytes_all_valid_runs": {
+        "n": 1,
+        "mean": 159990,
+        "median": 159990,
+        "min": 159990,
+        "max": 159990
+      },
+      "transfer_usd_all_valid_runs": {
+        "n": 1,
+        "mean": 0.0002319855,
+        "median": 0.0002319855,
+        "min": 0.0002319855,
+        "max": 0.0002319855
+      },
+      "observed_sessions_all_valid_runs": 1,
+      "mixed_source_sessions_all_valid_runs": 0
+    },
+    {
+      "block": "rate-window",
+      "workload": "scrape",
+      "defender": "bind",
+      "routing": "R-clean-stick",
+      "sessions": 1,
+      "count": 31,
+      "body_bytes": 1024,
+      "manifest_bytes": 32,
+      "reuse": 10,
+      "limit": 10,
+      "window_s": 2,
+      "request_interval_s": 0.2,
+      "reconnect_every": 0,
+      "reconnect_source": "hold",
+      "cell_id": "time-rate-window-013",
+      "ideal_records_ok": 31,
+      "planned": 1,
+      "completed": 1,
+      "valid": 1,
+      "successes": 0,
+      "success_rate": 0.0,
+      "success_wilson95": [
+        0,
+        0.7934506856227626
+      ],
+      "invalid": 0,
+      "missing": 0,
+      "max_body_discrepancy": 0.0,
+      "complete_deliveries": 0,
+      "successes_99": 0,
+      "delivery_fraction_all_valid_runs": {
+        "n": 1,
+        "mean": 0.967741935483871,
+        "median": 0.967741935483871,
+        "min": 0.967741935483871,
+        "max": 0.967741935483871
+      },
+      "duration_s_all_valid_runs": {
+        "n": 1,
+        "mean": 6.215036081994185,
+        "median": 6.215036081994185,
+        "min": 6.215036081994185,
+        "max": 6.215036081994185
+      },
+      "clean_bytes_among_complete": null,
+      "dirty_bytes_among_complete": null,
+      "clean_addresses_among_complete": null,
+      "clean_bytes_among_successes": null,
+      "dirty_bytes_among_successes": null,
+      "clean_addresses_among_successes": null,
+      "clean_share_among_successes": null,
+      "addresses_used_among_successes": null,
+      "tunnel_bytes_among_successes": null,
+      "transfer_usd_among_successes": null,
+      "own_path_low_usd_among_successes": null,
+      "own_path_high_usd_among_successes": null,
+      "dedicated_address_month_usd_among_successes": null,
+      "addresses_per_session_among_successes": null,
+      "addresses_used_all_valid_runs": {
+        "n": 1,
+        "mean": 1,
+        "median": 1,
+        "min": 1,
+        "max": 1
+      },
+      "tunnel_bytes_all_valid_runs": {
+        "n": 1,
+        "mean": 68403,
+        "median": 68403,
+        "min": 68403,
+        "max": 68403
+      },
+      "transfer_usd_all_valid_runs": {
+        "n": 1,
+        "mean": 9.918434999999999e-05,
+        "median": 9.918434999999999e-05,
+        "min": 9.918434999999999e-05,
+        "max": 9.918434999999999e-05
+      },
+      "observed_sessions_all_valid_runs": 1,
+      "mixed_source_sessions_all_valid_runs": 0
+    },
+    {
+      "block": "rate-window",
+      "workload": "scrape",
+      "defender": "bind",
+      "routing": "R-clean-rot",
+      "sessions": 1,
+      "count": 31,
+      "body_bytes": 1024,
+      "manifest_bytes": 32,
+      "reuse": 1,
+      "limit": 10,
+      "window_s": 2,
+      "request_interval_s": 0.2,
+      "reconnect_every": 0,
+      "reconnect_source": "hold",
+      "cell_id": "time-rate-window-014",
+      "ideal_records_ok": 0,
+      "planned": 1,
+      "completed": 1,
+      "valid": 1,
+      "successes": 0,
+      "success_rate": 0.0,
+      "success_wilson95": [
+        0,
+        0.7934506856227626
+      ],
+      "invalid": 0,
+      "missing": 0,
+      "max_body_discrepancy": 0.0,
+      "complete_deliveries": 0,
+      "successes_99": 0,
+      "delivery_fraction_all_valid_runs": {
+        "n": 1,
+        "mean": 0.0,
+        "median": 0.0,
+        "min": 0.0,
+        "max": 0.0
+      },
+      "duration_s_all_valid_runs": {
+        "n": 1,
+        "mean": 6.213738128004479,
+        "median": 6.213738128004479,
+        "min": 6.213738128004479,
+        "max": 6.213738128004479
+      },
+      "clean_bytes_among_complete": null,
+      "dirty_bytes_among_complete": null,
+      "clean_addresses_among_complete": null,
+      "clean_bytes_among_successes": null,
+      "dirty_bytes_among_successes": null,
+      "clean_addresses_among_successes": null,
+      "clean_share_among_successes": null,
+      "addresses_used_among_successes": null,
+      "tunnel_bytes_among_successes": null,
+      "transfer_usd_among_successes": null,
+      "own_path_low_usd_among_successes": null,
+      "own_path_high_usd_among_successes": null,
+      "dedicated_address_month_usd_among_successes": null,
+      "addresses_per_session_among_successes": null,
+      "addresses_used_all_valid_runs": {
+        "n": 1,
+        "mean": 32,
+        "median": 32,
+        "min": 32,
+        "max": 32
+      },
+      "tunnel_bytes_all_valid_runs": {
+        "n": 1,
+        "mean": 129047,
+        "median": 129047,
+        "min": 129047,
+        "max": 129047
+      },
+      "transfer_usd_all_valid_runs": {
+        "n": 1,
+        "mean": 0.00018711815,
+        "median": 0.00018711815,
+        "min": 0.00018711815,
+        "max": 0.00018711815
+      },
+      "observed_sessions_all_valid_runs": 1,
+      "mixed_source_sessions_all_valid_runs": 1
+    },
+    {
+      "block": "rate-window",
+      "workload": "scrape",
+      "defender": "bind",
+      "routing": "R-clean-rot",
+      "sessions": 1,
+      "count": 31,
+      "body_bytes": 1024,
+      "manifest_bytes": 32,
+      "reuse": 10,
+      "limit": 10,
+      "window_s": 2,
+      "request_interval_s": 0.2,
+      "reconnect_every": 0,
+      "reconnect_source": "hold",
+      "cell_id": "time-rate-window-015",
+      "ideal_records_ok": 0,
+      "planned": 1,
+      "completed": 1,
+      "valid": 1,
+      "successes": 0,
+      "success_rate": 0.0,
+      "success_wilson95": [
+        0,
+        0.7934506856227626
+      ],
+      "invalid": 0,
+      "missing": 0,
+      "max_body_discrepancy": 0.0,
+      "complete_deliveries": 0,
+      "successes_99": 0,
+      "delivery_fraction_all_valid_runs": {
+        "n": 1,
+        "mean": 0.0,
+        "median": 0.0,
+        "min": 0.0,
+        "max": 0.0
+      },
+      "duration_s_all_valid_runs": {
+        "n": 1,
+        "mean": 6.217531637012144,
+        "median": 6.217531637012144,
+        "min": 6.217531637012144,
+        "max": 6.217531637012144
+      },
+      "clean_bytes_among_complete": null,
+      "dirty_bytes_among_complete": null,
+      "clean_addresses_among_complete": null,
+      "clean_bytes_among_successes": null,
+      "dirty_bytes_among_successes": null,
+      "clean_addresses_among_successes": null,
+      "clean_share_among_successes": null,
+      "addresses_used_among_successes": null,
+      "tunnel_bytes_among_successes": null,
+      "transfer_usd_among_successes": null,
+      "own_path_low_usd_among_successes": null,
+      "own_path_high_usd_among_successes": null,
+      "dedicated_address_month_usd_among_successes": null,
+      "addresses_per_session_among_successes": null,
+      "addresses_used_all_valid_runs": {
+        "n": 1,
+        "mean": 5,
+        "median": 5,
+        "min": 5,
+        "max": 5
+      },
+      "tunnel_bytes_all_valid_runs": {
+        "n": 1,
+        "mean": 37332,
+        "median": 37332,
+        "min": 37332,
+        "max": 37332
+      },
+      "transfer_usd_all_valid_runs": {
+        "n": 1,
+        "mean": 5.41314e-05,
+        "median": 5.41314e-05,
+        "min": 5.41314e-05,
+        "max": 5.41314e-05
+      },
+      "observed_sessions_all_valid_runs": 1,
+      "mixed_source_sessions_all_valid_runs": 1
+    },
+    {
+      "block": "rate-window",
+      "workload": "scrape",
+      "defender": "every",
+      "routing": "R-clean-stick",
+      "sessions": 1,
+      "count": 31,
+      "body_bytes": 1024,
+      "manifest_bytes": 32,
+      "reuse": 1,
+      "limit": 10,
+      "window_s": 2,
+      "request_interval_s": 0.1,
+      "reconnect_every": 0,
+      "reconnect_source": "hold",
+      "cell_id": "time-rate-window-016",
+      "ideal_records_ok": 19,
+      "planned": 1,
+      "completed": 1,
+      "valid": 1,
+      "successes": 0,
+      "success_rate": 0.0,
+      "success_wilson95": [
+        0,
+        0.7934506856227626
+      ],
+      "invalid": 0,
+      "missing": 0,
+      "max_body_discrepancy": 0.0,
+      "complete_deliveries": 0,
+      "successes_99": 0,
+      "delivery_fraction_all_valid_runs": {
+        "n": 1,
+        "mean": 0.6129032258064516,
+        "median": 0.6129032258064516,
+        "min": 0.6129032258064516,
+        "max": 0.6129032258064516
+      },
+      "duration_s_all_valid_runs": {
+        "n": 1,
+        "mean": 3.1140772169892443,
+        "median": 3.1140772169892443,
+        "min": 3.1140772169892443,
+        "max": 3.1140772169892443
+      },
+      "clean_bytes_among_complete": null,
+      "dirty_bytes_among_complete": null,
+      "clean_addresses_among_complete": null,
+      "clean_bytes_among_successes": null,
+      "dirty_bytes_among_successes": null,
+      "clean_addresses_among_successes": null,
+      "clean_share_among_successes": null,
+      "addresses_used_among_successes": null,
+      "tunnel_bytes_among_successes": null,
+      "transfer_usd_among_successes": null,
+      "own_path_low_usd_among_successes": null,
+      "own_path_high_usd_among_successes": null,
+      "dedicated_address_month_usd_among_successes": null,
+      "addresses_per_session_among_successes": null,
+      "addresses_used_all_valid_runs": {
+        "n": 1,
+        "mean": 1,
+        "median": 1,
+        "min": 1,
+        "max": 1
+      },
+      "tunnel_bytes_all_valid_runs": {
+        "n": 1,
+        "mean": 148623,
+        "median": 148623,
+        "min": 148623,
+        "max": 148623
+      },
+      "transfer_usd_all_valid_runs": {
+        "n": 1,
+        "mean": 0.00021550335,
+        "median": 0.00021550335,
+        "min": 0.00021550335,
+        "max": 0.00021550335
+      },
+      "observed_sessions_all_valid_runs": 1,
+      "mixed_source_sessions_all_valid_runs": 0
+    },
+    {
+      "block": "rate-window",
+      "workload": "scrape",
+      "defender": "every",
+      "routing": "R-clean-stick",
+      "sessions": 1,
+      "count": 31,
+      "body_bytes": 1024,
+      "manifest_bytes": 32,
+      "reuse": 10,
+      "limit": 10,
+      "window_s": 2,
+      "request_interval_s": 0.1,
+      "reconnect_every": 0,
+      "reconnect_source": "hold",
+      "cell_id": "time-rate-window-017",
+      "ideal_records_ok": 19,
+      "planned": 1,
+      "completed": 1,
+      "valid": 1,
+      "successes": 0,
+      "success_rate": 0.0,
+      "success_wilson95": [
+        0,
+        0.7934506856227626
+      ],
+      "invalid": 0,
+      "missing": 0,
+      "max_body_discrepancy": 0.0,
+      "complete_deliveries": 0,
+      "successes_99": 0,
+      "delivery_fraction_all_valid_runs": {
+        "n": 1,
+        "mean": 0.6129032258064516,
+        "median": 0.6129032258064516,
+        "min": 0.6129032258064516,
+        "max": 0.6129032258064516
+      },
+      "duration_s_all_valid_runs": {
+        "n": 1,
+        "mean": 3.113551993999863,
+        "median": 3.113551993999863,
+        "min": 3.113551993999863,
+        "max": 3.113551993999863
+      },
+      "clean_bytes_among_complete": null,
+      "dirty_bytes_among_complete": null,
+      "clean_addresses_among_complete": null,
+      "clean_bytes_among_successes": null,
+      "dirty_bytes_among_successes": null,
+      "clean_addresses_among_successes": null,
+      "clean_share_among_successes": null,
+      "addresses_used_among_successes": null,
+      "tunnel_bytes_among_successes": null,
+      "transfer_usd_among_successes": null,
+      "own_path_low_usd_among_successes": null,
+      "own_path_high_usd_among_successes": null,
+      "dedicated_address_month_usd_among_successes": null,
+      "addresses_per_session_among_successes": null,
+      "addresses_used_all_valid_runs": {
+        "n": 1,
+        "mean": 1,
+        "median": 1,
+        "min": 1,
+        "max": 1
+      },
+      "tunnel_bytes_all_valid_runs": {
+        "n": 1,
+        "mean": 56908,
+        "median": 56908,
+        "min": 56908,
+        "max": 56908
+      },
+      "transfer_usd_all_valid_runs": {
+        "n": 1,
+        "mean": 8.25166e-05,
+        "median": 8.25166e-05,
+        "min": 8.25166e-05,
+        "max": 8.25166e-05
+      },
+      "observed_sessions_all_valid_runs": 1,
+      "mixed_source_sessions_all_valid_runs": 0
+    },
+    {
+      "block": "rate-window",
+      "workload": "scrape",
+      "defender": "every",
+      "routing": "R-clean-rot",
+      "sessions": 1,
+      "count": 31,
+      "body_bytes": 1024,
+      "manifest_bytes": 32,
+      "reuse": 1,
+      "limit": 10,
+      "window_s": 2,
+      "request_interval_s": 0.1,
+      "reconnect_every": 0,
+      "reconnect_source": "hold",
+      "cell_id": "time-rate-window-018",
+      "ideal_records_ok": 31,
+      "planned": 1,
+      "completed": 1,
+      "valid": 1,
+      "successes": 1,
+      "success_rate": 1.0,
+      "success_wilson95": [
+        0.20654931437723745,
+        1
+      ],
+      "invalid": 0,
+      "missing": 0,
+      "max_body_discrepancy": 0.0,
+      "complete_deliveries": 1,
+      "successes_99": 1,
+      "delivery_fraction_all_valid_runs": {
+        "n": 1,
+        "mean": 1.0,
+        "median": 1.0,
+        "min": 1.0,
+        "max": 1.0
+      },
+      "duration_s_all_valid_runs": {
+        "n": 1,
+        "mean": 3.112855575993308,
+        "median": 3.112855575993308,
+        "min": 3.112855575993308,
+        "max": 3.112855575993308
+      },
+      "clean_bytes_among_complete": {
+        "n": 1,
+        "mean": 161163,
+        "median": 161163,
+        "min": 161163,
+        "max": 161163
+      },
+      "dirty_bytes_among_complete": {
+        "n": 1,
+        "mean": 0,
+        "median": 0,
+        "min": 0,
+        "max": 0
+      },
+      "clean_addresses_among_complete": {
+        "n": 1,
+        "mean": 32,
+        "median": 32,
+        "min": 32,
+        "max": 32
+      },
+      "clean_bytes_among_successes": {
+        "n": 1,
+        "mean": 161163,
+        "median": 161163,
+        "min": 161163,
+        "max": 161163
+      },
+      "dirty_bytes_among_successes": {
+        "n": 1,
+        "mean": 0,
+        "median": 0,
+        "min": 0,
+        "max": 0
+      },
+      "clean_addresses_among_successes": {
+        "n": 1,
+        "mean": 32,
+        "median": 32,
+        "min": 32,
+        "max": 32
+      },
+      "clean_share_among_successes": {
+        "n": 1,
+        "mean": 1.0,
+        "median": 1.0,
+        "min": 1.0,
+        "max": 1.0
+      },
+      "addresses_used_among_successes": {
+        "n": 1,
+        "mean": 32,
+        "median": 32,
+        "min": 32,
+        "max": 32
+      },
+      "tunnel_bytes_among_successes": {
+        "n": 1,
+        "mean": 161163,
+        "median": 161163,
+        "min": 161163,
+        "max": 161163
+      },
+      "transfer_usd_among_successes": {
+        "n": 1,
+        "mean": 0.00023368635,
+        "median": 0.00023368635,
+        "min": 0.00023368635,
+        "max": 0.00023368635
+      },
+      "own_path_low_usd_among_successes": {
+        "n": 1,
+        "mean": 0.00023368635,
+        "median": 0.00023368635,
+        "min": 0.00023368635,
+        "max": 0.00023368635
+      },
+      "own_path_high_usd_among_successes": {
+        "n": 1,
+        "mean": 0.00023368635,
+        "median": 0.00023368635,
+        "min": 0.00023368635,
+        "max": 0.00023368635
+      },
+      "dedicated_address_month_usd_among_successes": null,
+      "addresses_per_session_among_successes": {
+        "n": 1,
+        "mean": 32,
+        "median": 32,
+        "min": 32,
+        "max": 32
+      },
+      "addresses_used_all_valid_runs": {
+        "n": 1,
+        "mean": 32,
+        "median": 32,
+        "min": 32,
+        "max": 32
+      },
+      "tunnel_bytes_all_valid_runs": {
+        "n": 1,
+        "mean": 161163,
+        "median": 161163,
+        "min": 161163,
+        "max": 161163
+      },
+      "transfer_usd_all_valid_runs": {
+        "n": 1,
+        "mean": 0.00023368635,
+        "median": 0.00023368635,
+        "min": 0.00023368635,
+        "max": 0.00023368635
+      },
+      "observed_sessions_all_valid_runs": 1,
+      "mixed_source_sessions_all_valid_runs": 1
+    },
+    {
+      "block": "rate-window",
+      "workload": "scrape",
+      "defender": "every",
+      "routing": "R-clean-rot",
+      "sessions": 1,
+      "count": 31,
+      "body_bytes": 1024,
+      "manifest_bytes": 32,
+      "reuse": 10,
+      "limit": 10,
+      "window_s": 2,
+      "request_interval_s": 0.1,
+      "reconnect_every": 0,
+      "reconnect_source": "hold",
+      "cell_id": "time-rate-window-019",
+      "ideal_records_ok": 31,
+      "planned": 1,
+      "completed": 1,
+      "valid": 1,
+      "successes": 1,
+      "success_rate": 1.0,
+      "success_wilson95": [
+        0.20654931437723745,
+        1
+      ],
+      "invalid": 0,
+      "missing": 0,
+      "max_body_discrepancy": 0.0,
+      "complete_deliveries": 1,
+      "successes_99": 1,
+      "delivery_fraction_all_valid_runs": {
+        "n": 1,
+        "mean": 1.0,
+        "median": 1.0,
+        "min": 1.0,
+        "max": 1.0
+      },
+      "duration_s_all_valid_runs": {
+        "n": 1,
+        "mean": 3.114085538996733,
+        "median": 3.114085538996733,
+        "min": 3.114085538996733,
+        "max": 3.114085538996733
+      },
+      "clean_bytes_among_complete": {
+        "n": 1,
+        "mean": 69448,
+        "median": 69448,
+        "min": 69448,
+        "max": 69448
+      },
+      "dirty_bytes_among_complete": {
+        "n": 1,
+        "mean": 0,
+        "median": 0,
+        "min": 0,
+        "max": 0
+      },
+      "clean_addresses_among_complete": {
+        "n": 1,
+        "mean": 5,
+        "median": 5,
+        "min": 5,
+        "max": 5
+      },
+      "clean_bytes_among_successes": {
+        "n": 1,
+        "mean": 69448,
+        "median": 69448,
+        "min": 69448,
+        "max": 69448
+      },
+      "dirty_bytes_among_successes": {
+        "n": 1,
+        "mean": 0,
+        "median": 0,
+        "min": 0,
+        "max": 0
+      },
+      "clean_addresses_among_successes": {
+        "n": 1,
+        "mean": 5,
+        "median": 5,
+        "min": 5,
+        "max": 5
+      },
+      "clean_share_among_successes": {
+        "n": 1,
+        "mean": 1.0,
+        "median": 1.0,
+        "min": 1.0,
+        "max": 1.0
+      },
+      "addresses_used_among_successes": {
+        "n": 1,
+        "mean": 5,
+        "median": 5,
+        "min": 5,
+        "max": 5
+      },
+      "tunnel_bytes_among_successes": {
+        "n": 1,
+        "mean": 69448,
+        "median": 69448,
+        "min": 69448,
+        "max": 69448
+      },
+      "transfer_usd_among_successes": {
+        "n": 1,
+        "mean": 0.0001006996,
+        "median": 0.0001006996,
+        "min": 0.0001006996,
+        "max": 0.0001006996
+      },
+      "own_path_low_usd_among_successes": {
+        "n": 1,
+        "mean": 0.0001006996,
+        "median": 0.0001006996,
+        "min": 0.0001006996,
+        "max": 0.0001006996
+      },
+      "own_path_high_usd_among_successes": {
+        "n": 1,
+        "mean": 0.0001006996,
+        "median": 0.0001006996,
+        "min": 0.0001006996,
+        "max": 0.0001006996
+      },
+      "dedicated_address_month_usd_among_successes": null,
+      "addresses_per_session_among_successes": {
+        "n": 1,
+        "mean": 5,
+        "median": 5,
+        "min": 5,
+        "max": 5
+      },
+      "addresses_used_all_valid_runs": {
+        "n": 1,
+        "mean": 5,
+        "median": 5,
+        "min": 5,
+        "max": 5
+      },
+      "tunnel_bytes_all_valid_runs": {
+        "n": 1,
+        "mean": 69448,
+        "median": 69448,
+        "min": 69448,
+        "max": 69448
+      },
+      "transfer_usd_all_valid_runs": {
+        "n": 1,
+        "mean": 0.0001006996,
+        "median": 0.0001006996,
+        "min": 0.0001006996,
+        "max": 0.0001006996
+      },
+      "observed_sessions_all_valid_runs": 1,
+      "mixed_source_sessions_all_valid_runs": 1
+    },
+    {
+      "block": "rate-window",
+      "workload": "scrape",
+      "defender": "bind",
+      "routing": "R-clean-stick",
+      "sessions": 1,
+      "count": 31,
+      "body_bytes": 1024,
+      "manifest_bytes": 32,
+      "reuse": 1,
+      "limit": 10,
+      "window_s": 2,
+      "request_interval_s": 0.1,
+      "reconnect_every": 0,
+      "reconnect_source": "hold",
+      "cell_id": "time-rate-window-020",
+      "ideal_records_ok": 19,
+      "planned": 1,
+      "completed": 1,
+      "valid": 1,
+      "successes": 0,
+      "success_rate": 0.0,
+      "success_wilson95": [
+        0,
+        0.7934506856227626
+      ],
+      "invalid": 0,
+      "missing": 0,
+      "max_body_discrepancy": 0.0,
+      "complete_deliveries": 0,
+      "successes_99": 0,
+      "delivery_fraction_all_valid_runs": {
+        "n": 1,
+        "mean": 0.6129032258064516,
+        "median": 0.6129032258064516,
+        "min": 0.6129032258064516,
+        "max": 0.6129032258064516
+      },
+      "duration_s_all_valid_runs": {
+        "n": 1,
+        "mean": 3.1150699709978653,
+        "median": 3.1150699709978653,
+        "min": 3.1150699709978653,
+        "max": 3.1150699709978653
+      },
+      "clean_bytes_among_complete": null,
+      "dirty_bytes_among_complete": null,
+      "clean_addresses_among_complete": null,
+      "clean_bytes_among_successes": null,
+      "dirty_bytes_among_successes": null,
+      "clean_addresses_among_successes": null,
+      "clean_share_among_successes": null,
+      "addresses_used_among_successes": null,
+      "tunnel_bytes_among_successes": null,
+      "transfer_usd_among_successes": null,
+      "own_path_low_usd_among_successes": null,
+      "own_path_high_usd_among_successes": null,
+      "dedicated_address_month_usd_among_successes": null,
+      "addresses_per_session_among_successes": null,
+      "addresses_used_all_valid_runs": {
+        "n": 1,
+        "mean": 1,
+        "median": 1,
+        "min": 1,
+        "max": 1
+      },
+      "tunnel_bytes_all_valid_runs": {
+        "n": 1,
+        "mean": 148623,
+        "median": 148623,
+        "min": 148623,
+        "max": 148623
+      },
+      "transfer_usd_all_valid_runs": {
+        "n": 1,
+        "mean": 0.00021550335,
+        "median": 0.00021550335,
+        "min": 0.00021550335,
+        "max": 0.00021550335
+      },
+      "observed_sessions_all_valid_runs": 1,
+      "mixed_source_sessions_all_valid_runs": 0
+    },
+    {
+      "block": "rate-window",
+      "workload": "scrape",
+      "defender": "bind",
+      "routing": "R-clean-stick",
+      "sessions": 1,
+      "count": 31,
+      "body_bytes": 1024,
+      "manifest_bytes": 32,
+      "reuse": 10,
+      "limit": 10,
+      "window_s": 2,
+      "request_interval_s": 0.1,
+      "reconnect_every": 0,
+      "reconnect_source": "hold",
+      "cell_id": "time-rate-window-021",
+      "ideal_records_ok": 19,
+      "planned": 1,
+      "completed": 1,
+      "valid": 1,
+      "successes": 0,
+      "success_rate": 0.0,
+      "success_wilson95": [
+        0,
+        0.7934506856227626
+      ],
+      "invalid": 0,
+      "missing": 0,
+      "max_body_discrepancy": 0.0,
+      "complete_deliveries": 0,
+      "successes_99": 0,
+      "delivery_fraction_all_valid_runs": {
+        "n": 1,
+        "mean": 0.6129032258064516,
+        "median": 0.6129032258064516,
+        "min": 0.6129032258064516,
+        "max": 0.6129032258064516
+      },
+      "duration_s_all_valid_runs": {
+        "n": 1,
+        "mean": 3.1166469769959804,
+        "median": 3.1166469769959804,
+        "min": 3.1166469769959804,
+        "max": 3.1166469769959804
+      },
+      "clean_bytes_among_complete": null,
+      "dirty_bytes_among_complete": null,
+      "clean_addresses_among_complete": null,
+      "clean_bytes_among_successes": null,
+      "dirty_bytes_among_successes": null,
+      "clean_addresses_among_successes": null,
+      "clean_share_among_successes": null,
+      "addresses_used_among_successes": null,
+      "tunnel_bytes_among_successes": null,
+      "transfer_usd_among_successes": null,
+      "own_path_low_usd_among_successes": null,
+      "own_path_high_usd_among_successes": null,
+      "dedicated_address_month_usd_among_successes": null,
+      "addresses_per_session_among_successes": null,
+      "addresses_used_all_valid_runs": {
+        "n": 1,
+        "mean": 1,
+        "median": 1,
+        "min": 1,
+        "max": 1
+      },
+      "tunnel_bytes_all_valid_runs": {
+        "n": 1,
+        "mean": 56908,
+        "median": 56908,
+        "min": 56908,
+        "max": 56908
+      },
+      "transfer_usd_all_valid_runs": {
+        "n": 1,
+        "mean": 8.25166e-05,
+        "median": 8.25166e-05,
+        "min": 8.25166e-05,
+        "max": 8.25166e-05
+      },
+      "observed_sessions_all_valid_runs": 1,
+      "mixed_source_sessions_all_valid_runs": 0
+    },
+    {
+      "block": "rate-window",
+      "workload": "scrape",
+      "defender": "bind",
+      "routing": "R-clean-rot",
+      "sessions": 1,
+      "count": 31,
+      "body_bytes": 1024,
+      "manifest_bytes": 32,
+      "reuse": 1,
+      "limit": 10,
+      "window_s": 2,
+      "request_interval_s": 0.1,
+      "reconnect_every": 0,
+      "reconnect_source": "hold",
+      "cell_id": "time-rate-window-022",
+      "ideal_records_ok": 0,
+      "planned": 1,
+      "completed": 1,
+      "valid": 1,
+      "successes": 0,
+      "success_rate": 0.0,
+      "success_wilson95": [
+        0,
+        0.7934506856227626
+      ],
+      "invalid": 0,
+      "missing": 0,
+      "max_body_discrepancy": 0.0,
+      "complete_deliveries": 0,
+      "successes_99": 0,
+      "delivery_fraction_all_valid_runs": {
+        "n": 1,
+        "mean": 0.0,
+        "median": 0.0,
+        "min": 0.0,
+        "max": 0.0
+      },
+      "duration_s_all_valid_runs": {
+        "n": 1,
+        "mean": 3.114991056994768,
+        "median": 3.114991056994768,
+        "min": 3.114991056994768,
+        "max": 3.114991056994768
+      },
+      "clean_bytes_among_complete": null,
+      "dirty_bytes_among_complete": null,
+      "clean_addresses_among_complete": null,
+      "clean_bytes_among_successes": null,
+      "dirty_bytes_among_successes": null,
+      "clean_addresses_among_successes": null,
+      "clean_share_among_successes": null,
+      "addresses_used_among_successes": null,
+      "tunnel_bytes_among_successes": null,
+      "transfer_usd_among_successes": null,
+      "own_path_low_usd_among_successes": null,
+      "own_path_high_usd_among_successes": null,
+      "dedicated_address_month_usd_among_successes": null,
+      "addresses_per_session_among_successes": null,
+      "addresses_used_all_valid_runs": {
+        "n": 1,
+        "mean": 32,
+        "median": 32,
+        "min": 32,
+        "max": 32
+      },
+      "tunnel_bytes_all_valid_runs": {
+        "n": 1,
+        "mean": 129047,
+        "median": 129047,
+        "min": 129047,
+        "max": 129047
+      },
+      "transfer_usd_all_valid_runs": {
+        "n": 1,
+        "mean": 0.00018711815,
+        "median": 0.00018711815,
+        "min": 0.00018711815,
+        "max": 0.00018711815
+      },
+      "observed_sessions_all_valid_runs": 1,
+      "mixed_source_sessions_all_valid_runs": 1
+    },
+    {
+      "block": "rate-window",
+      "workload": "scrape",
+      "defender": "bind",
+      "routing": "R-clean-rot",
+      "sessions": 1,
+      "count": 31,
+      "body_bytes": 1024,
+      "manifest_bytes": 32,
+      "reuse": 10,
+      "limit": 10,
+      "window_s": 2,
+      "request_interval_s": 0.1,
+      "reconnect_every": 0,
+      "reconnect_source": "hold",
+      "cell_id": "time-rate-window-023",
+      "ideal_records_ok": 0,
+      "planned": 1,
+      "completed": 1,
+      "valid": 1,
+      "successes": 0,
+      "success_rate": 0.0,
+      "success_wilson95": [
+        0,
+        0.7934506856227626
+      ],
+      "invalid": 0,
+      "missing": 0,
+      "max_body_discrepancy": 0.0,
+      "complete_deliveries": 0,
+      "successes_99": 0,
+      "delivery_fraction_all_valid_runs": {
+        "n": 1,
+        "mean": 0.0,
+        "median": 0.0,
+        "min": 0.0,
+        "max": 0.0
+      },
+      "duration_s_all_valid_runs": {
+        "n": 1,
+        "mean": 3.114346453003236,
+        "median": 3.114346453003236,
+        "min": 3.114346453003236,
+        "max": 3.114346453003236
+      },
+      "clean_bytes_among_complete": null,
+      "dirty_bytes_among_complete": null,
+      "clean_addresses_among_complete": null,
+      "clean_bytes_among_successes": null,
+      "dirty_bytes_among_successes": null,
+      "clean_addresses_among_successes": null,
+      "clean_share_among_successes": null,
+      "addresses_used_among_successes": null,
+      "tunnel_bytes_among_successes": null,
+      "transfer_usd_among_successes": null,
+      "own_path_low_usd_among_successes": null,
+      "own_path_high_usd_among_successes": null,
+      "dedicated_address_month_usd_among_successes": null,
+      "addresses_per_session_among_successes": null,
+      "addresses_used_all_valid_runs": {
+        "n": 1,
+        "mean": 5,
+        "median": 5,
+        "min": 5,
+        "max": 5
+      },
+      "tunnel_bytes_all_valid_runs": {
+        "n": 1,
+        "mean": 37332,
+        "median": 37332,
+        "min": 37332,
+        "max": 37332
+      },
+      "transfer_usd_all_valid_runs": {
+        "n": 1,
+        "mean": 5.41314e-05,
+        "median": 5.41314e-05,
+        "min": 5.41314e-05,
+        "max": 5.41314e-05
+      },
+      "observed_sessions_all_valid_runs": 1,
+      "mixed_source_sessions_all_valid_runs": 1
+    },
+    {
+      "block": "rate-window",
+      "workload": "scrape",
+      "defender": "every",
+      "routing": "R-clean-stick",
+      "sessions": 1,
+      "count": 31,
+      "body_bytes": 1024,
+      "manifest_bytes": 32,
+      "reuse": 1,
+      "limit": 10,
+      "window_s": 10,
+      "request_interval_s": 2.0,
+      "reconnect_every": 0,
+      "reconnect_source": "hold",
+      "cell_id": "time-rate-window-024",
+      "ideal_records_ok": 31,
+      "planned": 1,
+      "completed": 1,
+      "valid": 1,
+      "successes": 1,
+      "success_rate": 1.0,
+      "success_wilson95": [
+        0.20654931437723745,
+        1
+      ],
+      "invalid": 0,
+      "missing": 0,
+      "max_body_discrepancy": 0.0,
+      "complete_deliveries": 1,
+      "successes_99": 1,
+      "delivery_fraction_all_valid_runs": {
+        "n": 1,
+        "mean": 1.0,
+        "median": 1.0,
+        "min": 1.0,
+        "max": 1.0
+      },
+      "duration_s_all_valid_runs": {
+        "n": 1,
+        "mean": 62.015316151999286,
+        "median": 62.015316151999286,
+        "min": 62.015316151999286,
+        "max": 62.015316151999286
+      },
+      "clean_bytes_among_complete": {
+        "n": 1,
+        "mean": 161163,
+        "median": 161163,
+        "min": 161163,
+        "max": 161163
+      },
+      "dirty_bytes_among_complete": {
+        "n": 1,
+        "mean": 0,
+        "median": 0,
+        "min": 0,
+        "max": 0
+      },
+      "clean_addresses_among_complete": {
+        "n": 1,
+        "mean": 1,
+        "median": 1,
+        "min": 1,
+        "max": 1
+      },
+      "clean_bytes_among_successes": {
+        "n": 1,
+        "mean": 161163,
+        "median": 161163,
+        "min": 161163,
+        "max": 161163
+      },
+      "dirty_bytes_among_successes": {
+        "n": 1,
+        "mean": 0,
+        "median": 0,
+        "min": 0,
+        "max": 0
+      },
+      "clean_addresses_among_successes": {
+        "n": 1,
+        "mean": 1,
+        "median": 1,
+        "min": 1,
+        "max": 1
+      },
+      "clean_share_among_successes": {
+        "n": 1,
+        "mean": 1.0,
+        "median": 1.0,
+        "min": 1.0,
+        "max": 1.0
+      },
+      "addresses_used_among_successes": {
+        "n": 1,
+        "mean": 1,
+        "median": 1,
+        "min": 1,
+        "max": 1
+      },
+      "tunnel_bytes_among_successes": {
+        "n": 1,
+        "mean": 161163,
+        "median": 161163,
+        "min": 161163,
+        "max": 161163
+      },
+      "transfer_usd_among_successes": {
+        "n": 1,
+        "mean": 0.00023368635,
+        "median": 0.00023368635,
+        "min": 0.00023368635,
+        "max": 0.00023368635
+      },
+      "own_path_low_usd_among_successes": {
+        "n": 1,
+        "mean": 0.00023368635,
+        "median": 0.00023368635,
+        "min": 0.00023368635,
+        "max": 0.00023368635
+      },
+      "own_path_high_usd_among_successes": {
+        "n": 1,
+        "mean": 0.00023368635,
+        "median": 0.00023368635,
+        "min": 0.00023368635,
+        "max": 0.00023368635
+      },
+      "dedicated_address_month_usd_among_successes": {
+        "n": 1,
+        "mean": 1.25,
+        "median": 1.25,
+        "min": 1.25,
+        "max": 1.25
+      },
+      "addresses_per_session_among_successes": {
+        "n": 1,
+        "mean": 1,
+        "median": 1,
+        "min": 1,
+        "max": 1
+      },
+      "addresses_used_all_valid_runs": {
+        "n": 1,
+        "mean": 1,
+        "median": 1,
+        "min": 1,
+        "max": 1
+      },
+      "tunnel_bytes_all_valid_runs": {
+        "n": 1,
+        "mean": 161163,
+        "median": 161163,
+        "min": 161163,
+        "max": 161163
+      },
+      "transfer_usd_all_valid_runs": {
+        "n": 1,
+        "mean": 0.00023368635,
+        "median": 0.00023368635,
+        "min": 0.00023368635,
+        "max": 0.00023368635
+      },
+      "observed_sessions_all_valid_runs": 1,
+      "mixed_source_sessions_all_valid_runs": 0
+    },
+    {
+      "block": "rate-window",
+      "workload": "scrape",
+      "defender": "every",
+      "routing": "R-clean-stick",
+      "sessions": 1,
+      "count": 31,
+      "body_bytes": 1024,
+      "manifest_bytes": 32,
+      "reuse": 10,
+      "limit": 10,
+      "window_s": 10,
+      "request_interval_s": 2.0,
+      "reconnect_every": 0,
+      "reconnect_source": "hold",
+      "cell_id": "time-rate-window-025",
+      "ideal_records_ok": 31,
+      "planned": 1,
+      "completed": 1,
+      "valid": 1,
+      "successes": 1,
+      "success_rate": 1.0,
+      "success_wilson95": [
+        0.20654931437723745,
+        1
+      ],
+      "invalid": 0,
+      "missing": 0,
+      "max_body_discrepancy": 0.0,
+      "complete_deliveries": 1,
+      "successes_99": 1,
+      "delivery_fraction_all_valid_runs": {
+        "n": 1,
+        "mean": 1.0,
+        "median": 1.0,
+        "min": 1.0,
+        "max": 1.0
+      },
+      "duration_s_all_valid_runs": {
+        "n": 1,
+        "mean": 62.01393334499153,
+        "median": 62.01393334499153,
+        "min": 62.01393334499153,
+        "max": 62.01393334499153
+      },
+      "clean_bytes_among_complete": {
+        "n": 1,
+        "mean": 69448,
+        "median": 69448,
+        "min": 69448,
+        "max": 69448
+      },
+      "dirty_bytes_among_complete": {
+        "n": 1,
+        "mean": 0,
+        "median": 0,
+        "min": 0,
+        "max": 0
+      },
+      "clean_addresses_among_complete": {
+        "n": 1,
+        "mean": 1,
+        "median": 1,
+        "min": 1,
+        "max": 1
+      },
+      "clean_bytes_among_successes": {
+        "n": 1,
+        "mean": 69448,
+        "median": 69448,
+        "min": 69448,
+        "max": 69448
+      },
+      "dirty_bytes_among_successes": {
+        "n": 1,
+        "mean": 0,
+        "median": 0,
+        "min": 0,
+        "max": 0
+      },
+      "clean_addresses_among_successes": {
+        "n": 1,
+        "mean": 1,
+        "median": 1,
+        "min": 1,
+        "max": 1
+      },
+      "clean_share_among_successes": {
+        "n": 1,
+        "mean": 1.0,
+        "median": 1.0,
+        "min": 1.0,
+        "max": 1.0
+      },
+      "addresses_used_among_successes": {
+        "n": 1,
+        "mean": 1,
+        "median": 1,
+        "min": 1,
+        "max": 1
+      },
+      "tunnel_bytes_among_successes": {
+        "n": 1,
+        "mean": 69448,
+        "median": 69448,
+        "min": 69448,
+        "max": 69448
+      },
+      "transfer_usd_among_successes": {
+        "n": 1,
+        "mean": 0.0001006996,
+        "median": 0.0001006996,
+        "min": 0.0001006996,
+        "max": 0.0001006996
+      },
+      "own_path_low_usd_among_successes": {
+        "n": 1,
+        "mean": 0.0001006996,
+        "median": 0.0001006996,
+        "min": 0.0001006996,
+        "max": 0.0001006996
+      },
+      "own_path_high_usd_among_successes": {
+        "n": 1,
+        "mean": 0.0001006996,
+        "median": 0.0001006996,
+        "min": 0.0001006996,
+        "max": 0.0001006996
+      },
+      "dedicated_address_month_usd_among_successes": {
+        "n": 1,
+        "mean": 1.25,
+        "median": 1.25,
+        "min": 1.25,
+        "max": 1.25
+      },
+      "addresses_per_session_among_successes": {
+        "n": 1,
+        "mean": 1,
+        "median": 1,
+        "min": 1,
+        "max": 1
+      },
+      "addresses_used_all_valid_runs": {
+        "n": 1,
+        "mean": 1,
+        "median": 1,
+        "min": 1,
+        "max": 1
+      },
+      "tunnel_bytes_all_valid_runs": {
+        "n": 1,
+        "mean": 69448,
+        "median": 69448,
+        "min": 69448,
+        "max": 69448
+      },
+      "transfer_usd_all_valid_runs": {
+        "n": 1,
+        "mean": 0.0001006996,
+        "median": 0.0001006996,
+        "min": 0.0001006996,
+        "max": 0.0001006996
+      },
+      "observed_sessions_all_valid_runs": 1,
+      "mixed_source_sessions_all_valid_runs": 0
+    },
+    {
+      "block": "rate-window",
+      "workload": "scrape",
+      "defender": "every",
+      "routing": "R-clean-rot",
+      "sessions": 1,
+      "count": 31,
+      "body_bytes": 1024,
+      "manifest_bytes": 32,
+      "reuse": 1,
+      "limit": 10,
+      "window_s": 10,
+      "request_interval_s": 2.0,
+      "reconnect_every": 0,
+      "reconnect_source": "hold",
+      "cell_id": "time-rate-window-026",
+      "ideal_records_ok": 31,
+      "planned": 1,
+      "completed": 1,
+      "valid": 1,
+      "successes": 1,
+      "success_rate": 1.0,
+      "success_wilson95": [
+        0.20654931437723745,
+        1
+      ],
+      "invalid": 0,
+      "missing": 0,
+      "max_body_discrepancy": 0.0,
+      "complete_deliveries": 1,
+      "successes_99": 1,
+      "delivery_fraction_all_valid_runs": {
+        "n": 1,
+        "mean": 1.0,
+        "median": 1.0,
+        "min": 1.0,
+        "max": 1.0
+      },
+      "duration_s_all_valid_runs": {
+        "n": 1,
+        "mean": 62.01408672299294,
+        "median": 62.01408672299294,
+        "min": 62.01408672299294,
+        "max": 62.01408672299294
+      },
+      "clean_bytes_among_complete": {
+        "n": 1,
+        "mean": 161163,
+        "median": 161163,
+        "min": 161163,
+        "max": 161163
+      },
+      "dirty_bytes_among_complete": {
+        "n": 1,
+        "mean": 0,
+        "median": 0,
+        "min": 0,
+        "max": 0
+      },
+      "clean_addresses_among_complete": {
+        "n": 1,
+        "mean": 32,
+        "median": 32,
+        "min": 32,
+        "max": 32
+      },
+      "clean_bytes_among_successes": {
+        "n": 1,
+        "mean": 161163,
+        "median": 161163,
+        "min": 161163,
+        "max": 161163
+      },
+      "dirty_bytes_among_successes": {
+        "n": 1,
+        "mean": 0,
+        "median": 0,
+        "min": 0,
+        "max": 0
+      },
+      "clean_addresses_among_successes": {
+        "n": 1,
+        "mean": 32,
+        "median": 32,
+        "min": 32,
+        "max": 32
+      },
+      "clean_share_among_successes": {
+        "n": 1,
+        "mean": 1.0,
+        "median": 1.0,
+        "min": 1.0,
+        "max": 1.0
+      },
+      "addresses_used_among_successes": {
+        "n": 1,
+        "mean": 32,
+        "median": 32,
+        "min": 32,
+        "max": 32
+      },
+      "tunnel_bytes_among_successes": {
+        "n": 1,
+        "mean": 161163,
+        "median": 161163,
+        "min": 161163,
+        "max": 161163
+      },
+      "transfer_usd_among_successes": {
+        "n": 1,
+        "mean": 0.00023368635,
+        "median": 0.00023368635,
+        "min": 0.00023368635,
+        "max": 0.00023368635
+      },
+      "own_path_low_usd_among_successes": {
+        "n": 1,
+        "mean": 0.00023368635,
+        "median": 0.00023368635,
+        "min": 0.00023368635,
+        "max": 0.00023368635
+      },
+      "own_path_high_usd_among_successes": {
+        "n": 1,
+        "mean": 0.00023368635,
+        "median": 0.00023368635,
+        "min": 0.00023368635,
+        "max": 0.00023368635
+      },
+      "dedicated_address_month_usd_among_successes": null,
+      "addresses_per_session_among_successes": {
+        "n": 1,
+        "mean": 32,
+        "median": 32,
+        "min": 32,
+        "max": 32
+      },
+      "addresses_used_all_valid_runs": {
+        "n": 1,
+        "mean": 32,
+        "median": 32,
+        "min": 32,
+        "max": 32
+      },
+      "tunnel_bytes_all_valid_runs": {
+        "n": 1,
+        "mean": 161163,
+        "median": 161163,
+        "min": 161163,
+        "max": 161163
+      },
+      "transfer_usd_all_valid_runs": {
+        "n": 1,
+        "mean": 0.00023368635,
+        "median": 0.00023368635,
+        "min": 0.00023368635,
+        "max": 0.00023368635
+      },
+      "observed_sessions_all_valid_runs": 1,
+      "mixed_source_sessions_all_valid_runs": 1
+    },
+    {
+      "block": "rate-window",
+      "workload": "scrape",
+      "defender": "every",
+      "routing": "R-clean-rot",
+      "sessions": 1,
+      "count": 31,
+      "body_bytes": 1024,
+      "manifest_bytes": 32,
+      "reuse": 10,
+      "limit": 10,
+      "window_s": 10,
+      "request_interval_s": 2.0,
+      "reconnect_every": 0,
+      "reconnect_source": "hold",
+      "cell_id": "time-rate-window-027",
+      "ideal_records_ok": 31,
+      "planned": 1,
+      "completed": 1,
+      "valid": 1,
+      "successes": 1,
+      "success_rate": 1.0,
+      "success_wilson95": [
+        0.20654931437723745,
+        1
+      ],
+      "invalid": 0,
+      "missing": 0,
+      "max_body_discrepancy": 0.0,
+      "complete_deliveries": 1,
+      "successes_99": 1,
+      "delivery_fraction_all_valid_runs": {
+        "n": 1,
+        "mean": 1.0,
+        "median": 1.0,
+        "min": 1.0,
+        "max": 1.0
+      },
+      "duration_s_all_valid_runs": {
+        "n": 1,
+        "mean": 62.01472714600095,
+        "median": 62.01472714600095,
+        "min": 62.01472714600095,
+        "max": 62.01472714600095
+      },
+      "clean_bytes_among_complete": {
+        "n": 1,
+        "mean": 69448,
+        "median": 69448,
+        "min": 69448,
+        "max": 69448
+      },
+      "dirty_bytes_among_complete": {
+        "n": 1,
+        "mean": 0,
+        "median": 0,
+        "min": 0,
+        "max": 0
+      },
+      "clean_addresses_among_complete": {
+        "n": 1,
+        "mean": 5,
+        "median": 5,
+        "min": 5,
+        "max": 5
+      },
+      "clean_bytes_among_successes": {
+        "n": 1,
+        "mean": 69448,
+        "median": 69448,
+        "min": 69448,
+        "max": 69448
+      },
+      "dirty_bytes_among_successes": {
+        "n": 1,
+        "mean": 0,
+        "median": 0,
+        "min": 0,
+        "max": 0
+      },
+      "clean_addresses_among_successes": {
+        "n": 1,
+        "mean": 5,
+        "median": 5,
+        "min": 5,
+        "max": 5
+      },
+      "clean_share_among_successes": {
+        "n": 1,
+        "mean": 1.0,
+        "median": 1.0,
+        "min": 1.0,
+        "max": 1.0
+      },
+      "addresses_used_among_successes": {
+        "n": 1,
+        "mean": 5,
+        "median": 5,
+        "min": 5,
+        "max": 5
+      },
+      "tunnel_bytes_among_successes": {
+        "n": 1,
+        "mean": 69448,
+        "median": 69448,
+        "min": 69448,
+        "max": 69448
+      },
+      "transfer_usd_among_successes": {
+        "n": 1,
+        "mean": 0.0001006996,
+        "median": 0.0001006996,
+        "min": 0.0001006996,
+        "max": 0.0001006996
+      },
+      "own_path_low_usd_among_successes": {
+        "n": 1,
+        "mean": 0.0001006996,
+        "median": 0.0001006996,
+        "min": 0.0001006996,
+        "max": 0.0001006996
+      },
+      "own_path_high_usd_among_successes": {
+        "n": 1,
+        "mean": 0.0001006996,
+        "median": 0.0001006996,
+        "min": 0.0001006996,
+        "max": 0.0001006996
+      },
+      "dedicated_address_month_usd_among_successes": null,
+      "addresses_per_session_among_successes": {
+        "n": 1,
+        "mean": 5,
+        "median": 5,
+        "min": 5,
+        "max": 5
+      },
+      "addresses_used_all_valid_runs": {
+        "n": 1,
+        "mean": 5,
+        "median": 5,
+        "min": 5,
+        "max": 5
+      },
+      "tunnel_bytes_all_valid_runs": {
+        "n": 1,
+        "mean": 69448,
+        "median": 69448,
+        "min": 69448,
+        "max": 69448
+      },
+      "transfer_usd_all_valid_runs": {
+        "n": 1,
+        "mean": 0.0001006996,
+        "median": 0.0001006996,
+        "min": 0.0001006996,
+        "max": 0.0001006996
+      },
+      "observed_sessions_all_valid_runs": 1,
+      "mixed_source_sessions_all_valid_runs": 1
+    },
+    {
+      "block": "rate-window",
+      "workload": "scrape",
+      "defender": "bind",
+      "routing": "R-clean-stick",
+      "sessions": 1,
+      "count": 31,
+      "body_bytes": 1024,
+      "manifest_bytes": 32,
+      "reuse": 1,
+      "limit": 10,
+      "window_s": 10,
+      "request_interval_s": 2.0,
+      "reconnect_every": 0,
+      "reconnect_source": "hold",
+      "cell_id": "time-rate-window-028",
+      "ideal_records_ok": 31,
+      "planned": 1,
+      "completed": 1,
+      "valid": 1,
+      "successes": 1,
+      "success_rate": 1.0,
+      "success_wilson95": [
+        0.20654931437723745,
+        1
+      ],
+      "invalid": 0,
+      "missing": 0,
+      "max_body_discrepancy": 0.0,
+      "complete_deliveries": 1,
+      "successes_99": 1,
+      "delivery_fraction_all_valid_runs": {
+        "n": 1,
+        "mean": 1.0,
+        "median": 1.0,
+        "min": 1.0,
+        "max": 1.0
+      },
+      "duration_s_all_valid_runs": {
+        "n": 1,
+        "mean": 62.01683787300135,
+        "median": 62.01683787300135,
+        "min": 62.01683787300135,
+        "max": 62.01683787300135
+      },
+      "clean_bytes_among_complete": {
+        "n": 1,
+        "mean": 161163,
+        "median": 161163,
+        "min": 161163,
+        "max": 161163
+      },
+      "dirty_bytes_among_complete": {
+        "n": 1,
+        "mean": 0,
+        "median": 0,
+        "min": 0,
+        "max": 0
+      },
+      "clean_addresses_among_complete": {
+        "n": 1,
+        "mean": 1,
+        "median": 1,
+        "min": 1,
+        "max": 1
+      },
+      "clean_bytes_among_successes": {
+        "n": 1,
+        "mean": 161163,
+        "median": 161163,
+        "min": 161163,
+        "max": 161163
+      },
+      "dirty_bytes_among_successes": {
+        "n": 1,
+        "mean": 0,
+        "median": 0,
+        "min": 0,
+        "max": 0
+      },
+      "clean_addresses_among_successes": {
+        "n": 1,
+        "mean": 1,
+        "median": 1,
+        "min": 1,
+        "max": 1
+      },
+      "clean_share_among_successes": {
+        "n": 1,
+        "mean": 1.0,
+        "median": 1.0,
+        "min": 1.0,
+        "max": 1.0
+      },
+      "addresses_used_among_successes": {
+        "n": 1,
+        "mean": 1,
+        "median": 1,
+        "min": 1,
+        "max": 1
+      },
+      "tunnel_bytes_among_successes": {
+        "n": 1,
+        "mean": 161163,
+        "median": 161163,
+        "min": 161163,
+        "max": 161163
+      },
+      "transfer_usd_among_successes": {
+        "n": 1,
+        "mean": 0.00023368635,
+        "median": 0.00023368635,
+        "min": 0.00023368635,
+        "max": 0.00023368635
+      },
+      "own_path_low_usd_among_successes": {
+        "n": 1,
+        "mean": 0.00023368635,
+        "median": 0.00023368635,
+        "min": 0.00023368635,
+        "max": 0.00023368635
+      },
+      "own_path_high_usd_among_successes": {
+        "n": 1,
+        "mean": 0.00023368635,
+        "median": 0.00023368635,
+        "min": 0.00023368635,
+        "max": 0.00023368635
+      },
+      "dedicated_address_month_usd_among_successes": {
+        "n": 1,
+        "mean": 1.25,
+        "median": 1.25,
+        "min": 1.25,
+        "max": 1.25
+      },
+      "addresses_per_session_among_successes": {
+        "n": 1,
+        "mean": 1,
+        "median": 1,
+        "min": 1,
+        "max": 1
+      },
+      "addresses_used_all_valid_runs": {
+        "n": 1,
+        "mean": 1,
+        "median": 1,
+        "min": 1,
+        "max": 1
+      },
+      "tunnel_bytes_all_valid_runs": {
+        "n": 1,
+        "mean": 161163,
+        "median": 161163,
+        "min": 161163,
+        "max": 161163
+      },
+      "transfer_usd_all_valid_runs": {
+        "n": 1,
+        "mean": 0.00023368635,
+        "median": 0.00023368635,
+        "min": 0.00023368635,
+        "max": 0.00023368635
+      },
+      "observed_sessions_all_valid_runs": 1,
+      "mixed_source_sessions_all_valid_runs": 0
+    },
+    {
+      "block": "rate-window",
+      "workload": "scrape",
+      "defender": "bind",
+      "routing": "R-clean-stick",
+      "sessions": 1,
+      "count": 31,
+      "body_bytes": 1024,
+      "manifest_bytes": 32,
+      "reuse": 10,
+      "limit": 10,
+      "window_s": 10,
+      "request_interval_s": 2.0,
+      "reconnect_every": 0,
+      "reconnect_source": "hold",
+      "cell_id": "time-rate-window-029",
+      "ideal_records_ok": 31,
+      "planned": 1,
+      "completed": 1,
+      "valid": 1,
+      "successes": 1,
+      "success_rate": 1.0,
+      "success_wilson95": [
+        0.20654931437723745,
+        1
+      ],
+      "invalid": 0,
+      "missing": 0,
+      "max_body_discrepancy": 0.0,
+      "complete_deliveries": 1,
+      "successes_99": 1,
+      "delivery_fraction_all_valid_runs": {
+        "n": 1,
+        "mean": 1.0,
+        "median": 1.0,
+        "min": 1.0,
+        "max": 1.0
+      },
+      "duration_s_all_valid_runs": {
+        "n": 1,
+        "mean": 62.01515626600303,
+        "median": 62.01515626600303,
+        "min": 62.01515626600303,
+        "max": 62.01515626600303
+      },
+      "clean_bytes_among_complete": {
+        "n": 1,
+        "mean": 69448,
+        "median": 69448,
+        "min": 69448,
+        "max": 69448
+      },
+      "dirty_bytes_among_complete": {
+        "n": 1,
+        "mean": 0,
+        "median": 0,
+        "min": 0,
+        "max": 0
+      },
+      "clean_addresses_among_complete": {
+        "n": 1,
+        "mean": 1,
+        "median": 1,
+        "min": 1,
+        "max": 1
+      },
+      "clean_bytes_among_successes": {
+        "n": 1,
+        "mean": 69448,
+        "median": 69448,
+        "min": 69448,
+        "max": 69448
+      },
+      "dirty_bytes_among_successes": {
+        "n": 1,
+        "mean": 0,
+        "median": 0,
+        "min": 0,
+        "max": 0
+      },
+      "clean_addresses_among_successes": {
+        "n": 1,
+        "mean": 1,
+        "median": 1,
+        "min": 1,
+        "max": 1
+      },
+      "clean_share_among_successes": {
+        "n": 1,
+        "mean": 1.0,
+        "median": 1.0,
+        "min": 1.0,
+        "max": 1.0
+      },
+      "addresses_used_among_successes": {
+        "n": 1,
+        "mean": 1,
+        "median": 1,
+        "min": 1,
+        "max": 1
+      },
+      "tunnel_bytes_among_successes": {
+        "n": 1,
+        "mean": 69448,
+        "median": 69448,
+        "min": 69448,
+        "max": 69448
+      },
+      "transfer_usd_among_successes": {
+        "n": 1,
+        "mean": 0.0001006996,
+        "median": 0.0001006996,
+        "min": 0.0001006996,
+        "max": 0.0001006996
+      },
+      "own_path_low_usd_among_successes": {
+        "n": 1,
+        "mean": 0.0001006996,
+        "median": 0.0001006996,
+        "min": 0.0001006996,
+        "max": 0.0001006996
+      },
+      "own_path_high_usd_among_successes": {
+        "n": 1,
+        "mean": 0.0001006996,
+        "median": 0.0001006996,
+        "min": 0.0001006996,
+        "max": 0.0001006996
+      },
+      "dedicated_address_month_usd_among_successes": {
+        "n": 1,
+        "mean": 1.25,
+        "median": 1.25,
+        "min": 1.25,
+        "max": 1.25
+      },
+      "addresses_per_session_among_successes": {
+        "n": 1,
+        "mean": 1,
+        "median": 1,
+        "min": 1,
+        "max": 1
+      },
+      "addresses_used_all_valid_runs": {
+        "n": 1,
+        "mean": 1,
+        "median": 1,
+        "min": 1,
+        "max": 1
+      },
+      "tunnel_bytes_all_valid_runs": {
+        "n": 1,
+        "mean": 69448,
+        "median": 69448,
+        "min": 69448,
+        "max": 69448
+      },
+      "transfer_usd_all_valid_runs": {
+        "n": 1,
+        "mean": 0.0001006996,
+        "median": 0.0001006996,
+        "min": 0.0001006996,
+        "max": 0.0001006996
+      },
+      "observed_sessions_all_valid_runs": 1,
+      "mixed_source_sessions_all_valid_runs": 0
+    },
+    {
+      "block": "rate-window",
+      "workload": "scrape",
+      "defender": "bind",
+      "routing": "R-clean-rot",
+      "sessions": 1,
+      "count": 31,
+      "body_bytes": 1024,
+      "manifest_bytes": 32,
+      "reuse": 1,
+      "limit": 10,
+      "window_s": 10,
+      "request_interval_s": 2.0,
+      "reconnect_every": 0,
+      "reconnect_source": "hold",
+      "cell_id": "time-rate-window-030",
+      "ideal_records_ok": 0,
+      "planned": 1,
+      "completed": 1,
+      "valid": 1,
+      "successes": 0,
+      "success_rate": 0.0,
+      "success_wilson95": [
+        0,
+        0.7934506856227626
+      ],
+      "invalid": 0,
+      "missing": 0,
+      "max_body_discrepancy": 0.0,
+      "complete_deliveries": 0,
+      "successes_99": 0,
+      "delivery_fraction_all_valid_runs": {
+        "n": 1,
+        "mean": 0.0,
+        "median": 0.0,
+        "min": 0.0,
+        "max": 0.0
+      },
+      "duration_s_all_valid_runs": {
+        "n": 1,
+        "mean": 62.014780083991354,
+        "median": 62.014780083991354,
+        "min": 62.014780083991354,
+        "max": 62.014780083991354
+      },
+      "clean_bytes_among_complete": null,
+      "dirty_bytes_among_complete": null,
+      "clean_addresses_among_complete": null,
+      "clean_bytes_among_successes": null,
+      "dirty_bytes_among_successes": null,
+      "clean_addresses_among_successes": null,
+      "clean_share_among_successes": null,
+      "addresses_used_among_successes": null,
+      "tunnel_bytes_among_successes": null,
+      "transfer_usd_among_successes": null,
+      "own_path_low_usd_among_successes": null,
+      "own_path_high_usd_among_successes": null,
+      "dedicated_address_month_usd_among_successes": null,
+      "addresses_per_session_among_successes": null,
+      "addresses_used_all_valid_runs": {
+        "n": 1,
+        "mean": 32,
+        "median": 32,
+        "min": 32,
+        "max": 32
+      },
+      "tunnel_bytes_all_valid_runs": {
+        "n": 1,
+        "mean": 129047,
+        "median": 129047,
+        "min": 129047,
+        "max": 129047
+      },
+      "transfer_usd_all_valid_runs": {
+        "n": 1,
+        "mean": 0.00018711815,
+        "median": 0.00018711815,
+        "min": 0.00018711815,
+        "max": 0.00018711815
+      },
+      "observed_sessions_all_valid_runs": 1,
+      "mixed_source_sessions_all_valid_runs": 1
+    },
+    {
+      "block": "rate-window",
+      "workload": "scrape",
+      "defender": "bind",
+      "routing": "R-clean-rot",
+      "sessions": 1,
+      "count": 31,
+      "body_bytes": 1024,
+      "manifest_bytes": 32,
+      "reuse": 10,
+      "limit": 10,
+      "window_s": 10,
+      "request_interval_s": 2.0,
+      "reconnect_every": 0,
+      "reconnect_source": "hold",
+      "cell_id": "time-rate-window-031",
+      "ideal_records_ok": 0,
+      "planned": 1,
+      "completed": 1,
+      "valid": 1,
+      "successes": 0,
+      "success_rate": 0.0,
+      "success_wilson95": [
+        0,
+        0.7934506856227626
+      ],
+      "invalid": 0,
+      "missing": 0,
+      "max_body_discrepancy": 0.0,
+      "complete_deliveries": 0,
+      "successes_99": 0,
+      "delivery_fraction_all_valid_runs": {
+        "n": 1,
+        "mean": 0.0,
+        "median": 0.0,
+        "min": 0.0,
+        "max": 0.0
+      },
+      "duration_s_all_valid_runs": {
+        "n": 1,
+        "mean": 62.01894374898984,
+        "median": 62.01894374898984,
+        "min": 62.01894374898984,
+        "max": 62.01894374898984
+      },
+      "clean_bytes_among_complete": null,
+      "dirty_bytes_among_complete": null,
+      "clean_addresses_among_complete": null,
+      "clean_bytes_among_successes": null,
+      "dirty_bytes_among_successes": null,
+      "clean_addresses_among_successes": null,
+      "clean_share_among_successes": null,
+      "addresses_used_among_successes": null,
+      "tunnel_bytes_among_successes": null,
+      "transfer_usd_among_successes": null,
+      "own_path_low_usd_among_successes": null,
+      "own_path_high_usd_among_successes": null,
+      "dedicated_address_month_usd_among_successes": null,
+      "addresses_per_session_among_successes": null,
+      "addresses_used_all_valid_runs": {
+        "n": 1,
+        "mean": 5,
+        "median": 5,
+        "min": 5,
+        "max": 5
+      },
+      "tunnel_bytes_all_valid_runs": {
+        "n": 1,
+        "mean": 37332,
+        "median": 37332,
+        "min": 37332,
+        "max": 37332
+      },
+      "transfer_usd_all_valid_runs": {
+        "n": 1,
+        "mean": 5.41314e-05,
+        "median": 5.41314e-05,
+        "min": 5.41314e-05,
+        "max": 5.41314e-05
+      },
+      "observed_sessions_all_valid_runs": 1,
+      "mixed_source_sessions_all_valid_runs": 1
+    },
+    {
+      "block": "rate-window",
+      "workload": "scrape",
+      "defender": "every",
+      "routing": "R-clean-stick",
+      "sessions": 1,
+      "count": 31,
+      "body_bytes": 1024,
+      "manifest_bytes": 32,
+      "reuse": 1,
+      "limit": 10,
+      "window_s": 10,
+      "request_interval_s": 1.0,
+      "reconnect_every": 0,
+      "reconnect_source": "hold",
+      "cell_id": "time-rate-window-032",
+      "ideal_records_ok": 31,
+      "planned": 1,
+      "completed": 1,
+      "valid": 1,
+      "successes": 1,
+      "success_rate": 1.0,
+      "success_wilson95": [
+        0.20654931437723745,
+        1
+      ],
+      "invalid": 0,
+      "missing": 0,
+      "max_body_discrepancy": 0.0,
+      "complete_deliveries": 1,
+      "successes_99": 1,
+      "delivery_fraction_all_valid_runs": {
+        "n": 1,
+        "mean": 1.0,
+        "median": 1.0,
+        "min": 1.0,
+        "max": 1.0
+      },
+      "duration_s_all_valid_runs": {
+        "n": 1,
+        "mean": 31.014145715002087,
+        "median": 31.014145715002087,
+        "min": 31.014145715002087,
+        "max": 31.014145715002087
+      },
+      "clean_bytes_among_complete": {
+        "n": 1,
+        "mean": 161163,
+        "median": 161163,
+        "min": 161163,
+        "max": 161163
+      },
+      "dirty_bytes_among_complete": {
+        "n": 1,
+        "mean": 0,
+        "median": 0,
+        "min": 0,
+        "max": 0
+      },
+      "clean_addresses_among_complete": {
+        "n": 1,
+        "mean": 1,
+        "median": 1,
+        "min": 1,
+        "max": 1
+      },
+      "clean_bytes_among_successes": {
+        "n": 1,
+        "mean": 161163,
+        "median": 161163,
+        "min": 161163,
+        "max": 161163
+      },
+      "dirty_bytes_among_successes": {
+        "n": 1,
+        "mean": 0,
+        "median": 0,
+        "min": 0,
+        "max": 0
+      },
+      "clean_addresses_among_successes": {
+        "n": 1,
+        "mean": 1,
+        "median": 1,
+        "min": 1,
+        "max": 1
+      },
+      "clean_share_among_successes": {
+        "n": 1,
+        "mean": 1.0,
+        "median": 1.0,
+        "min": 1.0,
+        "max": 1.0
+      },
+      "addresses_used_among_successes": {
+        "n": 1,
+        "mean": 1,
+        "median": 1,
+        "min": 1,
+        "max": 1
+      },
+      "tunnel_bytes_among_successes": {
+        "n": 1,
+        "mean": 161163,
+        "median": 161163,
+        "min": 161163,
+        "max": 161163
+      },
+      "transfer_usd_among_successes": {
+        "n": 1,
+        "mean": 0.00023368635,
+        "median": 0.00023368635,
+        "min": 0.00023368635,
+        "max": 0.00023368635
+      },
+      "own_path_low_usd_among_successes": {
+        "n": 1,
+        "mean": 0.00023368635,
+        "median": 0.00023368635,
+        "min": 0.00023368635,
+        "max": 0.00023368635
+      },
+      "own_path_high_usd_among_successes": {
+        "n": 1,
+        "mean": 0.00023368635,
+        "median": 0.00023368635,
+        "min": 0.00023368635,
+        "max": 0.00023368635
+      },
+      "dedicated_address_month_usd_among_successes": {
+        "n": 1,
+        "mean": 1.25,
+        "median": 1.25,
+        "min": 1.25,
+        "max": 1.25
+      },
+      "addresses_per_session_among_successes": {
+        "n": 1,
+        "mean": 1,
+        "median": 1,
+        "min": 1,
+        "max": 1
+      },
+      "addresses_used_all_valid_runs": {
+        "n": 1,
+        "mean": 1,
+        "median": 1,
+        "min": 1,
+        "max": 1
+      },
+      "tunnel_bytes_all_valid_runs": {
+        "n": 1,
+        "mean": 161163,
+        "median": 161163,
+        "min": 161163,
+        "max": 161163
+      },
+      "transfer_usd_all_valid_runs": {
+        "n": 1,
+        "mean": 0.00023368635,
+        "median": 0.00023368635,
+        "min": 0.00023368635,
+        "max": 0.00023368635
+      },
+      "observed_sessions_all_valid_runs": 1,
+      "mixed_source_sessions_all_valid_runs": 0
+    },
+    {
+      "block": "rate-window",
+      "workload": "scrape",
+      "defender": "every",
+      "routing": "R-clean-stick",
+      "sessions": 1,
+      "count": 31,
+      "body_bytes": 1024,
+      "manifest_bytes": 32,
+      "reuse": 10,
+      "limit": 10,
+      "window_s": 10,
+      "request_interval_s": 1.0,
+      "reconnect_every": 0,
+      "reconnect_source": "hold",
+      "cell_id": "time-rate-window-033",
+      "ideal_records_ok": 31,
+      "planned": 1,
+      "completed": 1,
+      "valid": 1,
+      "successes": 0,
+      "success_rate": 0.0,
+      "success_wilson95": [
+        0,
+        0.7934506856227626
+      ],
+      "invalid": 0,
+      "missing": 0,
+      "max_body_discrepancy": 0.0,
+      "complete_deliveries": 0,
+      "successes_99": 0,
+      "delivery_fraction_all_valid_runs": {
+        "n": 1,
+        "mean": 0.967741935483871,
+        "median": 0.967741935483871,
+        "min": 0.967741935483871,
+        "max": 0.967741935483871
+      },
+      "duration_s_all_valid_runs": {
+        "n": 1,
+        "mean": 31.014659884996945,
+        "median": 31.014659884996945,
+        "min": 31.014659884996945,
+        "max": 31.014659884996945
+      },
+      "clean_bytes_among_complete": null,
+      "dirty_bytes_among_complete": null,
+      "clean_addresses_among_complete": null,
+      "clean_bytes_among_successes": null,
+      "dirty_bytes_among_successes": null,
+      "clean_addresses_among_successes": null,
+      "clean_share_among_successes": null,
+      "addresses_used_among_successes": null,
+      "tunnel_bytes_among_successes": null,
+      "transfer_usd_among_successes": null,
+      "own_path_low_usd_among_successes": null,
+      "own_path_high_usd_among_successes": null,
+      "dedicated_address_month_usd_among_successes": null,
+      "addresses_per_session_among_successes": null,
+      "addresses_used_all_valid_runs": {
+        "n": 1,
+        "mean": 1,
+        "median": 1,
+        "min": 1,
+        "max": 1
+      },
+      "tunnel_bytes_all_valid_runs": {
+        "n": 1,
+        "mean": 68403,
+        "median": 68403,
+        "min": 68403,
+        "max": 68403
+      },
+      "transfer_usd_all_valid_runs": {
+        "n": 1,
+        "mean": 9.918434999999999e-05,
+        "median": 9.918434999999999e-05,
+        "min": 9.918434999999999e-05,
+        "max": 9.918434999999999e-05
+      },
+      "observed_sessions_all_valid_runs": 1,
+      "mixed_source_sessions_all_valid_runs": 0
+    },
+    {
+      "block": "rate-window",
+      "workload": "scrape",
+      "defender": "every",
+      "routing": "R-clean-rot",
+      "sessions": 1,
+      "count": 31,
+      "body_bytes": 1024,
+      "manifest_bytes": 32,
+      "reuse": 1,
+      "limit": 10,
+      "window_s": 10,
+      "request_interval_s": 1.0,
+      "reconnect_every": 0,
+      "reconnect_source": "hold",
+      "cell_id": "time-rate-window-034",
+      "ideal_records_ok": 31,
+      "planned": 1,
+      "completed": 1,
+      "valid": 1,
+      "successes": 1,
+      "success_rate": 1.0,
+      "success_wilson95": [
+        0.20654931437723745,
+        1
+      ],
+      "invalid": 0,
+      "missing": 0,
+      "max_body_discrepancy": 0.0,
+      "complete_deliveries": 1,
+      "successes_99": 1,
+      "delivery_fraction_all_valid_runs": {
+        "n": 1,
+        "mean": 1.0,
+        "median": 1.0,
+        "min": 1.0,
+        "max": 1.0
+      },
+      "duration_s_all_valid_runs": {
+        "n": 1,
+        "mean": 31.014819992997218,
+        "median": 31.014819992997218,
+        "min": 31.014819992997218,
+        "max": 31.014819992997218
+      },
+      "clean_bytes_among_complete": {
+        "n": 1,
+        "mean": 161163,
+        "median": 161163,
+        "min": 161163,
+        "max": 161163
+      },
+      "dirty_bytes_among_complete": {
+        "n": 1,
+        "mean": 0,
+        "median": 0,
+        "min": 0,
+        "max": 0
+      },
+      "clean_addresses_among_complete": {
+        "n": 1,
+        "mean": 32,
+        "median": 32,
+        "min": 32,
+        "max": 32
+      },
+      "clean_bytes_among_successes": {
+        "n": 1,
+        "mean": 161163,
+        "median": 161163,
+        "min": 161163,
+        "max": 161163
+      },
+      "dirty_bytes_among_successes": {
+        "n": 1,
+        "mean": 0,
+        "median": 0,
+        "min": 0,
+        "max": 0
+      },
+      "clean_addresses_among_successes": {
+        "n": 1,
+        "mean": 32,
+        "median": 32,
+        "min": 32,
+        "max": 32
+      },
+      "clean_share_among_successes": {
+        "n": 1,
+        "mean": 1.0,
+        "median": 1.0,
+        "min": 1.0,
+        "max": 1.0
+      },
+      "addresses_used_among_successes": {
+        "n": 1,
+        "mean": 32,
+        "median": 32,
+        "min": 32,
+        "max": 32
+      },
+      "tunnel_bytes_among_successes": {
+        "n": 1,
+        "mean": 161163,
+        "median": 161163,
+        "min": 161163,
+        "max": 161163
+      },
+      "transfer_usd_among_successes": {
+        "n": 1,
+        "mean": 0.00023368635,
+        "median": 0.00023368635,
+        "min": 0.00023368635,
+        "max": 0.00023368635
+      },
+      "own_path_low_usd_among_successes": {
+        "n": 1,
+        "mean": 0.00023368635,
+        "median": 0.00023368635,
+        "min": 0.00023368635,
+        "max": 0.00023368635
+      },
+      "own_path_high_usd_among_successes": {
+        "n": 1,
+        "mean": 0.00023368635,
+        "median": 0.00023368635,
+        "min": 0.00023368635,
+        "max": 0.00023368635
+      },
+      "dedicated_address_month_usd_among_successes": null,
+      "addresses_per_session_among_successes": {
+        "n": 1,
+        "mean": 32,
+        "median": 32,
+        "min": 32,
+        "max": 32
+      },
+      "addresses_used_all_valid_runs": {
+        "n": 1,
+        "mean": 32,
+        "median": 32,
+        "min": 32,
+        "max": 32
+      },
+      "tunnel_bytes_all_valid_runs": {
+        "n": 1,
+        "mean": 161163,
+        "median": 161163,
+        "min": 161163,
+        "max": 161163
+      },
+      "transfer_usd_all_valid_runs": {
+        "n": 1,
+        "mean": 0.00023368635,
+        "median": 0.00023368635,
+        "min": 0.00023368635,
+        "max": 0.00023368635
+      },
+      "observed_sessions_all_valid_runs": 1,
+      "mixed_source_sessions_all_valid_runs": 1
+    },
+    {
+      "block": "rate-window",
+      "workload": "scrape",
+      "defender": "every",
+      "routing": "R-clean-rot",
+      "sessions": 1,
+      "count": 31,
+      "body_bytes": 1024,
+      "manifest_bytes": 32,
+      "reuse": 10,
+      "limit": 10,
+      "window_s": 10,
+      "request_interval_s": 1.0,
+      "reconnect_every": 0,
+      "reconnect_source": "hold",
+      "cell_id": "time-rate-window-035",
+      "ideal_records_ok": 31,
+      "planned": 1,
+      "completed": 1,
+      "valid": 1,
+      "successes": 1,
+      "success_rate": 1.0,
+      "success_wilson95": [
+        0.20654931437723745,
+        1
+      ],
+      "invalid": 0,
+      "missing": 0,
+      "max_body_discrepancy": 0.0,
+      "complete_deliveries": 1,
+      "successes_99": 1,
+      "delivery_fraction_all_valid_runs": {
+        "n": 1,
+        "mean": 1.0,
+        "median": 1.0,
+        "min": 1.0,
+        "max": 1.0
+      },
+      "duration_s_all_valid_runs": {
+        "n": 1,
+        "mean": 31.01429355100845,
+        "median": 31.01429355100845,
+        "min": 31.01429355100845,
+        "max": 31.01429355100845
+      },
+      "clean_bytes_among_complete": {
+        "n": 1,
+        "mean": 69448,
+        "median": 69448,
+        "min": 69448,
+        "max": 69448
+      },
+      "dirty_bytes_among_complete": {
+        "n": 1,
+        "mean": 0,
+        "median": 0,
+        "min": 0,
+        "max": 0
+      },
+      "clean_addresses_among_complete": {
+        "n": 1,
+        "mean": 5,
+        "median": 5,
+        "min": 5,
+        "max": 5
+      },
+      "clean_bytes_among_successes": {
+        "n": 1,
+        "mean": 69448,
+        "median": 69448,
+        "min": 69448,
+        "max": 69448
+      },
+      "dirty_bytes_among_successes": {
+        "n": 1,
+        "mean": 0,
+        "median": 0,
+        "min": 0,
+        "max": 0
+      },
+      "clean_addresses_among_successes": {
+        "n": 1,
+        "mean": 5,
+        "median": 5,
+        "min": 5,
+        "max": 5
+      },
+      "clean_share_among_successes": {
+        "n": 1,
+        "mean": 1.0,
+        "median": 1.0,
+        "min": 1.0,
+        "max": 1.0
+      },
+      "addresses_used_among_successes": {
+        "n": 1,
+        "mean": 5,
+        "median": 5,
+        "min": 5,
+        "max": 5
+      },
+      "tunnel_bytes_among_successes": {
+        "n": 1,
+        "mean": 69448,
+        "median": 69448,
+        "min": 69448,
+        "max": 69448
+      },
+      "transfer_usd_among_successes": {
+        "n": 1,
+        "mean": 0.0001006996,
+        "median": 0.0001006996,
+        "min": 0.0001006996,
+        "max": 0.0001006996
+      },
+      "own_path_low_usd_among_successes": {
+        "n": 1,
+        "mean": 0.0001006996,
+        "median": 0.0001006996,
+        "min": 0.0001006996,
+        "max": 0.0001006996
+      },
+      "own_path_high_usd_among_successes": {
+        "n": 1,
+        "mean": 0.0001006996,
+        "median": 0.0001006996,
+        "min": 0.0001006996,
+        "max": 0.0001006996
+      },
+      "dedicated_address_month_usd_among_successes": null,
+      "addresses_per_session_among_successes": {
+        "n": 1,
+        "mean": 5,
+        "median": 5,
+        "min": 5,
+        "max": 5
+      },
+      "addresses_used_all_valid_runs": {
+        "n": 1,
+        "mean": 5,
+        "median": 5,
+        "min": 5,
+        "max": 5
+      },
+      "tunnel_bytes_all_valid_runs": {
+        "n": 1,
+        "mean": 69448,
+        "median": 69448,
+        "min": 69448,
+        "max": 69448
+      },
+      "transfer_usd_all_valid_runs": {
+        "n": 1,
+        "mean": 0.0001006996,
+        "median": 0.0001006996,
+        "min": 0.0001006996,
+        "max": 0.0001006996
+      },
+      "observed_sessions_all_valid_runs": 1,
+      "mixed_source_sessions_all_valid_runs": 1
+    },
+    {
+      "block": "rate-window",
+      "workload": "scrape",
+      "defender": "bind",
+      "routing": "R-clean-stick",
+      "sessions": 1,
+      "count": 31,
+      "body_bytes": 1024,
+      "manifest_bytes": 32,
+      "reuse": 1,
+      "limit": 10,
+      "window_s": 10,
+      "request_interval_s": 1.0,
+      "reconnect_every": 0,
+      "reconnect_source": "hold",
+      "cell_id": "time-rate-window-036",
+      "ideal_records_ok": 31,
+      "planned": 1,
+      "completed": 1,
+      "valid": 1,
+      "successes": 1,
+      "success_rate": 1.0,
+      "success_wilson95": [
+        0.20654931437723745,
+        1
+      ],
+      "invalid": 0,
+      "missing": 0,
+      "max_body_discrepancy": 0.0,
+      "complete_deliveries": 1,
+      "successes_99": 1,
+      "delivery_fraction_all_valid_runs": {
+        "n": 1,
+        "mean": 1.0,
+        "median": 1.0,
+        "min": 1.0,
+        "max": 1.0
+      },
+      "duration_s_all_valid_runs": {
+        "n": 1,
+        "mean": 31.014038778987015,
+        "median": 31.014038778987015,
+        "min": 31.014038778987015,
+        "max": 31.014038778987015
+      },
+      "clean_bytes_among_complete": {
+        "n": 1,
+        "mean": 161163,
+        "median": 161163,
+        "min": 161163,
+        "max": 161163
+      },
+      "dirty_bytes_among_complete": {
+        "n": 1,
+        "mean": 0,
+        "median": 0,
+        "min": 0,
+        "max": 0
+      },
+      "clean_addresses_among_complete": {
+        "n": 1,
+        "mean": 1,
+        "median": 1,
+        "min": 1,
+        "max": 1
+      },
+      "clean_bytes_among_successes": {
+        "n": 1,
+        "mean": 161163,
+        "median": 161163,
+        "min": 161163,
+        "max": 161163
+      },
+      "dirty_bytes_among_successes": {
+        "n": 1,
+        "mean": 0,
+        "median": 0,
+        "min": 0,
+        "max": 0
+      },
+      "clean_addresses_among_successes": {
+        "n": 1,
+        "mean": 1,
+        "median": 1,
+        "min": 1,
+        "max": 1
+      },
+      "clean_share_among_successes": {
+        "n": 1,
+        "mean": 1.0,
+        "median": 1.0,
+        "min": 1.0,
+        "max": 1.0
+      },
+      "addresses_used_among_successes": {
+        "n": 1,
+        "mean": 1,
+        "median": 1,
+        "min": 1,
+        "max": 1
+      },
+      "tunnel_bytes_among_successes": {
+        "n": 1,
+        "mean": 161163,
+        "median": 161163,
+        "min": 161163,
+        "max": 161163
+      },
+      "transfer_usd_among_successes": {
+        "n": 1,
+        "mean": 0.00023368635,
+        "median": 0.00023368635,
+        "min": 0.00023368635,
+        "max": 0.00023368635
+      },
+      "own_path_low_usd_among_successes": {
+        "n": 1,
+        "mean": 0.00023368635,
+        "median": 0.00023368635,
+        "min": 0.00023368635,
+        "max": 0.00023368635
+      },
+      "own_path_high_usd_among_successes": {
+        "n": 1,
+        "mean": 0.00023368635,
+        "median": 0.00023368635,
+        "min": 0.00023368635,
+        "max": 0.00023368635
+      },
+      "dedicated_address_month_usd_among_successes": {
+        "n": 1,
+        "mean": 1.25,
+        "median": 1.25,
+        "min": 1.25,
+        "max": 1.25
+      },
+      "addresses_per_session_among_successes": {
+        "n": 1,
+        "mean": 1,
+        "median": 1,
+        "min": 1,
+        "max": 1
+      },
+      "addresses_used_all_valid_runs": {
+        "n": 1,
+        "mean": 1,
+        "median": 1,
+        "min": 1,
+        "max": 1
+      },
+      "tunnel_bytes_all_valid_runs": {
+        "n": 1,
+        "mean": 161163,
+        "median": 161163,
+        "min": 161163,
+        "max": 161163
+      },
+      "transfer_usd_all_valid_runs": {
+        "n": 1,
+        "mean": 0.00023368635,
+        "median": 0.00023368635,
+        "min": 0.00023368635,
+        "max": 0.00023368635
+      },
+      "observed_sessions_all_valid_runs": 1,
+      "mixed_source_sessions_all_valid_runs": 0
+    },
+    {
+      "block": "rate-window",
+      "workload": "scrape",
+      "defender": "bind",
+      "routing": "R-clean-stick",
+      "sessions": 1,
+      "count": 31,
+      "body_bytes": 1024,
+      "manifest_bytes": 32,
+      "reuse": 10,
+      "limit": 10,
+      "window_s": 10,
+      "request_interval_s": 1.0,
+      "reconnect_every": 0,
+      "reconnect_source": "hold",
+      "cell_id": "time-rate-window-037",
+      "ideal_records_ok": 31,
+      "planned": 1,
+      "completed": 1,
+      "valid": 1,
+      "successes": 0,
+      "success_rate": 0.0,
+      "success_wilson95": [
+        0,
+        0.7934506856227626
+      ],
+      "invalid": 0,
+      "missing": 0,
+      "max_body_discrepancy": 0.0,
+      "complete_deliveries": 0,
+      "successes_99": 0,
+      "delivery_fraction_all_valid_runs": {
+        "n": 1,
+        "mean": 0.9354838709677419,
+        "median": 0.9354838709677419,
+        "min": 0.9354838709677419,
+        "max": 0.9354838709677419
+      },
+      "duration_s_all_valid_runs": {
+        "n": 1,
+        "mean": 31.014641391011537,
+        "median": 31.014641391011537,
+        "min": 31.014641391011537,
+        "max": 31.014641391011537
+      },
+      "clean_bytes_among_complete": null,
+      "dirty_bytes_among_complete": null,
+      "clean_addresses_among_complete": null,
+      "clean_bytes_among_successes": null,
+      "dirty_bytes_among_successes": null,
+      "clean_addresses_among_successes": null,
+      "clean_share_among_successes": null,
+      "addresses_used_among_successes": null,
+      "tunnel_bytes_among_successes": null,
+      "transfer_usd_among_successes": null,
+      "own_path_low_usd_among_successes": null,
+      "own_path_high_usd_among_successes": null,
+      "dedicated_address_month_usd_among_successes": null,
+      "addresses_per_session_among_successes": null,
+      "addresses_used_all_valid_runs": {
+        "n": 1,
+        "mean": 1,
+        "median": 1,
+        "min": 1,
+        "max": 1
+      },
+      "tunnel_bytes_all_valid_runs": {
+        "n": 1,
+        "mean": 67358,
+        "median": 67358,
+        "min": 67358,
+        "max": 67358
+      },
+      "transfer_usd_all_valid_runs": {
+        "n": 1,
+        "mean": 9.76691e-05,
+        "median": 9.76691e-05,
+        "min": 9.76691e-05,
+        "max": 9.76691e-05
+      },
+      "observed_sessions_all_valid_runs": 1,
+      "mixed_source_sessions_all_valid_runs": 0
+    },
+    {
+      "block": "rate-window",
+      "workload": "scrape",
+      "defender": "bind",
+      "routing": "R-clean-rot",
+      "sessions": 1,
+      "count": 31,
+      "body_bytes": 1024,
+      "manifest_bytes": 32,
+      "reuse": 1,
+      "limit": 10,
+      "window_s": 10,
+      "request_interval_s": 1.0,
+      "reconnect_every": 0,
+      "reconnect_source": "hold",
+      "cell_id": "time-rate-window-038",
+      "ideal_records_ok": 0,
+      "planned": 1,
+      "completed": 1,
+      "valid": 1,
+      "successes": 0,
+      "success_rate": 0.0,
+      "success_wilson95": [
+        0,
+        0.7934506856227626
+      ],
+      "invalid": 0,
+      "missing": 0,
+      "max_body_discrepancy": 0.0,
+      "complete_deliveries": 0,
+      "successes_99": 0,
+      "delivery_fraction_all_valid_runs": {
+        "n": 1,
+        "mean": 0.0,
+        "median": 0.0,
+        "min": 0.0,
+        "max": 0.0
+      },
+      "duration_s_all_valid_runs": {
+        "n": 1,
+        "mean": 31.015261307009496,
+        "median": 31.015261307009496,
+        "min": 31.015261307009496,
+        "max": 31.015261307009496
+      },
+      "clean_bytes_among_complete": null,
+      "dirty_bytes_among_complete": null,
+      "clean_addresses_among_complete": null,
+      "clean_bytes_among_successes": null,
+      "dirty_bytes_among_successes": null,
+      "clean_addresses_among_successes": null,
+      "clean_share_among_successes": null,
+      "addresses_used_among_successes": null,
+      "tunnel_bytes_among_successes": null,
+      "transfer_usd_among_successes": null,
+      "own_path_low_usd_among_successes": null,
+      "own_path_high_usd_among_successes": null,
+      "dedicated_address_month_usd_among_successes": null,
+      "addresses_per_session_among_successes": null,
+      "addresses_used_all_valid_runs": {
+        "n": 1,
+        "mean": 32,
+        "median": 32,
+        "min": 32,
+        "max": 32
+      },
+      "tunnel_bytes_all_valid_runs": {
+        "n": 1,
+        "mean": 129047,
+        "median": 129047,
+        "min": 129047,
+        "max": 129047
+      },
+      "transfer_usd_all_valid_runs": {
+        "n": 1,
+        "mean": 0.00018711815,
+        "median": 0.00018711815,
+        "min": 0.00018711815,
+        "max": 0.00018711815
+      },
+      "observed_sessions_all_valid_runs": 1,
+      "mixed_source_sessions_all_valid_runs": 1
+    },
+    {
+      "block": "rate-window",
+      "workload": "scrape",
+      "defender": "bind",
+      "routing": "R-clean-rot",
+      "sessions": 1,
+      "count": 31,
+      "body_bytes": 1024,
+      "manifest_bytes": 32,
+      "reuse": 10,
+      "limit": 10,
+      "window_s": 10,
+      "request_interval_s": 1.0,
+      "reconnect_every": 0,
+      "reconnect_source": "hold",
+      "cell_id": "time-rate-window-039",
+      "ideal_records_ok": 0,
+      "planned": 1,
+      "completed": 1,
+      "valid": 1,
+      "successes": 0,
+      "success_rate": 0.0,
+      "success_wilson95": [
+        0,
+        0.7934506856227626
+      ],
+      "invalid": 0,
+      "missing": 0,
+      "max_body_discrepancy": 0.0,
+      "complete_deliveries": 0,
+      "successes_99": 0,
+      "delivery_fraction_all_valid_runs": {
+        "n": 1,
+        "mean": 0.0,
+        "median": 0.0,
+        "min": 0.0,
+        "max": 0.0
+      },
+      "duration_s_all_valid_runs": {
+        "n": 1,
+        "mean": 31.014989438001066,
+        "median": 31.014989438001066,
+        "min": 31.014989438001066,
+        "max": 31.014989438001066
+      },
+      "clean_bytes_among_complete": null,
+      "dirty_bytes_among_complete": null,
+      "clean_addresses_among_complete": null,
+      "clean_bytes_among_successes": null,
+      "dirty_bytes_among_successes": null,
+      "clean_addresses_among_successes": null,
+      "clean_share_among_successes": null,
+      "addresses_used_among_successes": null,
+      "tunnel_bytes_among_successes": null,
+      "transfer_usd_among_successes": null,
+      "own_path_low_usd_among_successes": null,
+      "own_path_high_usd_among_successes": null,
+      "dedicated_address_month_usd_among_successes": null,
+      "addresses_per_session_among_successes": null,
+      "addresses_used_all_valid_runs": {
+        "n": 1,
+        "mean": 5,
+        "median": 5,
+        "min": 5,
+        "max": 5
+      },
+      "tunnel_bytes_all_valid_runs": {
+        "n": 1,
+        "mean": 37332,
+        "median": 37332,
+        "min": 37332,
+        "max": 37332
+      },
+      "transfer_usd_all_valid_runs": {
+        "n": 1,
+        "mean": 5.41314e-05,
+        "median": 5.41314e-05,
+        "min": 5.41314e-05,
+        "max": 5.41314e-05
+      },
+      "observed_sessions_all_valid_runs": 1,
+      "mixed_source_sessions_all_valid_runs": 1
+    },
+    {
+      "block": "rate-window",
+      "workload": "scrape",
+      "defender": "every",
+      "routing": "R-clean-stick",
+      "sessions": 1,
+      "count": 31,
+      "body_bytes": 1024,
+      "manifest_bytes": 32,
+      "reuse": 1,
+      "limit": 10,
+      "window_s": 10,
+      "request_interval_s": 0.5,
+      "reconnect_every": 0,
+      "reconnect_source": "hold",
+      "cell_id": "time-rate-window-040",
+      "ideal_records_ok": 19,
+      "planned": 1,
+      "completed": 1,
+      "valid": 1,
+      "successes": 0,
+      "success_rate": 0.0,
+      "success_wilson95": [
+        0,
+        0.7934506856227626
+      ],
+      "invalid": 0,
+      "missing": 0,
+      "max_body_discrepancy": 0.0,
+      "complete_deliveries": 0,
+      "successes_99": 0,
+      "delivery_fraction_all_valid_runs": {
+        "n": 1,
+        "mean": 0.6129032258064516,
+        "median": 0.6129032258064516,
+        "min": 0.6129032258064516,
+        "max": 0.6129032258064516
+      },
+      "duration_s_all_valid_runs": {
+        "n": 1,
+        "mean": 15.514349953999044,
+        "median": 15.514349953999044,
+        "min": 15.514349953999044,
+        "max": 15.514349953999044
+      },
+      "clean_bytes_among_complete": null,
+      "dirty_bytes_among_complete": null,
+      "clean_addresses_among_complete": null,
+      "clean_bytes_among_successes": null,
+      "dirty_bytes_among_successes": null,
+      "clean_addresses_among_successes": null,
+      "clean_share_among_successes": null,
+      "addresses_used_among_successes": null,
+      "tunnel_bytes_among_successes": null,
+      "transfer_usd_among_successes": null,
+      "own_path_low_usd_among_successes": null,
+      "own_path_high_usd_among_successes": null,
+      "dedicated_address_month_usd_among_successes": null,
+      "addresses_per_session_among_successes": null,
+      "addresses_used_all_valid_runs": {
+        "n": 1,
+        "mean": 1,
+        "median": 1,
+        "min": 1,
+        "max": 1
+      },
+      "tunnel_bytes_all_valid_runs": {
+        "n": 1,
+        "mean": 148623,
+        "median": 148623,
+        "min": 148623,
+        "max": 148623
+      },
+      "transfer_usd_all_valid_runs": {
+        "n": 1,
+        "mean": 0.00021550335,
+        "median": 0.00021550335,
+        "min": 0.00021550335,
+        "max": 0.00021550335
+      },
+      "observed_sessions_all_valid_runs": 1,
+      "mixed_source_sessions_all_valid_runs": 0
+    },
+    {
+      "block": "rate-window",
+      "workload": "scrape",
+      "defender": "every",
+      "routing": "R-clean-stick",
+      "sessions": 1,
+      "count": 31,
+      "body_bytes": 1024,
+      "manifest_bytes": 32,
+      "reuse": 10,
+      "limit": 10,
+      "window_s": 10,
+      "request_interval_s": 0.5,
+      "reconnect_every": 0,
+      "reconnect_source": "hold",
+      "cell_id": "time-rate-window-041",
+      "ideal_records_ok": 19,
+      "planned": 1,
+      "completed": 1,
+      "valid": 1,
+      "successes": 0,
+      "success_rate": 0.0,
+      "success_wilson95": [
+        0,
+        0.7934506856227626
+      ],
+      "invalid": 0,
+      "missing": 0,
+      "max_body_discrepancy": 0.0,
+      "complete_deliveries": 0,
+      "successes_99": 0,
+      "delivery_fraction_all_valid_runs": {
+        "n": 1,
+        "mean": 0.6129032258064516,
+        "median": 0.6129032258064516,
+        "min": 0.6129032258064516,
+        "max": 0.6129032258064516
+      },
+      "duration_s_all_valid_runs": {
+        "n": 1,
+        "mean": 15.517942559003131,
+        "median": 15.517942559003131,
+        "min": 15.517942559003131,
+        "max": 15.517942559003131
+      },
+      "clean_bytes_among_complete": null,
+      "dirty_bytes_among_complete": null,
+      "clean_addresses_among_complete": null,
+      "clean_bytes_among_successes": null,
+      "dirty_bytes_among_successes": null,
+      "clean_addresses_among_successes": null,
+      "clean_share_among_successes": null,
+      "addresses_used_among_successes": null,
+      "tunnel_bytes_among_successes": null,
+      "transfer_usd_among_successes": null,
+      "own_path_low_usd_among_successes": null,
+      "own_path_high_usd_among_successes": null,
+      "dedicated_address_month_usd_among_successes": null,
+      "addresses_per_session_among_successes": null,
+      "addresses_used_all_valid_runs": {
+        "n": 1,
+        "mean": 1,
+        "median": 1,
+        "min": 1,
+        "max": 1
+      },
+      "tunnel_bytes_all_valid_runs": {
+        "n": 1,
+        "mean": 56908,
+        "median": 56908,
+        "min": 56908,
+        "max": 56908
+      },
+      "transfer_usd_all_valid_runs": {
+        "n": 1,
+        "mean": 8.25166e-05,
+        "median": 8.25166e-05,
+        "min": 8.25166e-05,
+        "max": 8.25166e-05
+      },
+      "observed_sessions_all_valid_runs": 1,
+      "mixed_source_sessions_all_valid_runs": 0
+    },
+    {
+      "block": "rate-window",
+      "workload": "scrape",
+      "defender": "every",
+      "routing": "R-clean-rot",
+      "sessions": 1,
+      "count": 31,
+      "body_bytes": 1024,
+      "manifest_bytes": 32,
+      "reuse": 1,
+      "limit": 10,
+      "window_s": 10,
+      "request_interval_s": 0.5,
+      "reconnect_every": 0,
+      "reconnect_source": "hold",
+      "cell_id": "time-rate-window-042",
+      "ideal_records_ok": 31,
+      "planned": 1,
+      "completed": 1,
+      "valid": 1,
+      "successes": 1,
+      "success_rate": 1.0,
+      "success_wilson95": [
+        0.20654931437723745,
+        1
+      ],
+      "invalid": 0,
+      "missing": 0,
+      "max_body_discrepancy": 0.0,
+      "complete_deliveries": 1,
+      "successes_99": 1,
+      "delivery_fraction_all_valid_runs": {
+        "n": 1,
+        "mean": 1.0,
+        "median": 1.0,
+        "min": 1.0,
+        "max": 1.0
+      },
+      "duration_s_all_valid_runs": {
+        "n": 1,
+        "mean": 15.515390026994282,
+        "median": 15.515390026994282,
+        "min": 15.515390026994282,
+        "max": 15.515390026994282
+      },
+      "clean_bytes_among_complete": {
+        "n": 1,
+        "mean": 161163,
+        "median": 161163,
+        "min": 161163,
+        "max": 161163
+      },
+      "dirty_bytes_among_complete": {
+        "n": 1,
+        "mean": 0,
+        "median": 0,
+        "min": 0,
+        "max": 0
+      },
+      "clean_addresses_among_complete": {
+        "n": 1,
+        "mean": 32,
+        "median": 32,
+        "min": 32,
+        "max": 32
+      },
+      "clean_bytes_among_successes": {
+        "n": 1,
+        "mean": 161163,
+        "median": 161163,
+        "min": 161163,
+        "max": 161163
+      },
+      "dirty_bytes_among_successes": {
+        "n": 1,
+        "mean": 0,
+        "median": 0,
+        "min": 0,
+        "max": 0
+      },
+      "clean_addresses_among_successes": {
+        "n": 1,
+        "mean": 32,
+        "median": 32,
+        "min": 32,
+        "max": 32
+      },
+      "clean_share_among_successes": {
+        "n": 1,
+        "mean": 1.0,
+        "median": 1.0,
+        "min": 1.0,
+        "max": 1.0
+      },
+      "addresses_used_among_successes": {
+        "n": 1,
+        "mean": 32,
+        "median": 32,
+        "min": 32,
+        "max": 32
+      },
+      "tunnel_bytes_among_successes": {
+        "n": 1,
+        "mean": 161163,
+        "median": 161163,
+        "min": 161163,
+        "max": 161163
+      },
+      "transfer_usd_among_successes": {
+        "n": 1,
+        "mean": 0.00023368635,
+        "median": 0.00023368635,
+        "min": 0.00023368635,
+        "max": 0.00023368635
+      },
+      "own_path_low_usd_among_successes": {
+        "n": 1,
+        "mean": 0.00023368635,
+        "median": 0.00023368635,
+        "min": 0.00023368635,
+        "max": 0.00023368635
+      },
+      "own_path_high_usd_among_successes": {
+        "n": 1,
+        "mean": 0.00023368635,
+        "median": 0.00023368635,
+        "min": 0.00023368635,
+        "max": 0.00023368635
+      },
+      "dedicated_address_month_usd_among_successes": null,
+      "addresses_per_session_among_successes": {
+        "n": 1,
+        "mean": 32,
+        "median": 32,
+        "min": 32,
+        "max": 32
+      },
+      "addresses_used_all_valid_runs": {
+        "n": 1,
+        "mean": 32,
+        "median": 32,
+        "min": 32,
+        "max": 32
+      },
+      "tunnel_bytes_all_valid_runs": {
+        "n": 1,
+        "mean": 161163,
+        "median": 161163,
+        "min": 161163,
+        "max": 161163
+      },
+      "transfer_usd_all_valid_runs": {
+        "n": 1,
+        "mean": 0.00023368635,
+        "median": 0.00023368635,
+        "min": 0.00023368635,
+        "max": 0.00023368635
+      },
+      "observed_sessions_all_valid_runs": 1,
+      "mixed_source_sessions_all_valid_runs": 1
+    },
+    {
+      "block": "rate-window",
+      "workload": "scrape",
+      "defender": "every",
+      "routing": "R-clean-rot",
+      "sessions": 1,
+      "count": 31,
+      "body_bytes": 1024,
+      "manifest_bytes": 32,
+      "reuse": 10,
+      "limit": 10,
+      "window_s": 10,
+      "request_interval_s": 0.5,
+      "reconnect_every": 0,
+      "reconnect_source": "hold",
+      "cell_id": "time-rate-window-043",
+      "ideal_records_ok": 31,
+      "planned": 1,
+      "completed": 1,
+      "valid": 1,
+      "successes": 1,
+      "success_rate": 1.0,
+      "success_wilson95": [
+        0.20654931437723745,
+        1
+      ],
+      "invalid": 0,
+      "missing": 0,
+      "max_body_discrepancy": 0.0,
+      "complete_deliveries": 1,
+      "successes_99": 1,
+      "delivery_fraction_all_valid_runs": {
+        "n": 1,
+        "mean": 1.0,
+        "median": 1.0,
+        "min": 1.0,
+        "max": 1.0
+      },
+      "duration_s_all_valid_runs": {
+        "n": 1,
+        "mean": 15.513585150009021,
+        "median": 15.513585150009021,
+        "min": 15.513585150009021,
+        "max": 15.513585150009021
+      },
+      "clean_bytes_among_complete": {
+        "n": 1,
+        "mean": 69448,
+        "median": 69448,
+        "min": 69448,
+        "max": 69448
+      },
+      "dirty_bytes_among_complete": {
+        "n": 1,
+        "mean": 0,
+        "median": 0,
+        "min": 0,
+        "max": 0
+      },
+      "clean_addresses_among_complete": {
+        "n": 1,
+        "mean": 5,
+        "median": 5,
+        "min": 5,
+        "max": 5
+      },
+      "clean_bytes_among_successes": {
+        "n": 1,
+        "mean": 69448,
+        "median": 69448,
+        "min": 69448,
+        "max": 69448
+      },
+      "dirty_bytes_among_successes": {
+        "n": 1,
+        "mean": 0,
+        "median": 0,
+        "min": 0,
+        "max": 0
+      },
+      "clean_addresses_among_successes": {
+        "n": 1,
+        "mean": 5,
+        "median": 5,
+        "min": 5,
+        "max": 5
+      },
+      "clean_share_among_successes": {
+        "n": 1,
+        "mean": 1.0,
+        "median": 1.0,
+        "min": 1.0,
+        "max": 1.0
+      },
+      "addresses_used_among_successes": {
+        "n": 1,
+        "mean": 5,
+        "median": 5,
+        "min": 5,
+        "max": 5
+      },
+      "tunnel_bytes_among_successes": {
+        "n": 1,
+        "mean": 69448,
+        "median": 69448,
+        "min": 69448,
+        "max": 69448
+      },
+      "transfer_usd_among_successes": {
+        "n": 1,
+        "mean": 0.0001006996,
+        "median": 0.0001006996,
+        "min": 0.0001006996,
+        "max": 0.0001006996
+      },
+      "own_path_low_usd_among_successes": {
+        "n": 1,
+        "mean": 0.0001006996,
+        "median": 0.0001006996,
+        "min": 0.0001006996,
+        "max": 0.0001006996
+      },
+      "own_path_high_usd_among_successes": {
+        "n": 1,
+        "mean": 0.0001006996,
+        "median": 0.0001006996,
+        "min": 0.0001006996,
+        "max": 0.0001006996
+      },
+      "dedicated_address_month_usd_among_successes": null,
+      "addresses_per_session_among_successes": {
+        "n": 1,
+        "mean": 5,
+        "median": 5,
+        "min": 5,
+        "max": 5
+      },
+      "addresses_used_all_valid_runs": {
+        "n": 1,
+        "mean": 5,
+        "median": 5,
+        "min": 5,
+        "max": 5
+      },
+      "tunnel_bytes_all_valid_runs": {
+        "n": 1,
+        "mean": 69448,
+        "median": 69448,
+        "min": 69448,
+        "max": 69448
+      },
+      "transfer_usd_all_valid_runs": {
+        "n": 1,
+        "mean": 0.0001006996,
+        "median": 0.0001006996,
+        "min": 0.0001006996,
+        "max": 0.0001006996
+      },
+      "observed_sessions_all_valid_runs": 1,
+      "mixed_source_sessions_all_valid_runs": 1
+    },
+    {
+      "block": "rate-window",
+      "workload": "scrape",
+      "defender": "bind",
+      "routing": "R-clean-stick",
+      "sessions": 1,
+      "count": 31,
+      "body_bytes": 1024,
+      "manifest_bytes": 32,
+      "reuse": 1,
+      "limit": 10,
+      "window_s": 10,
+      "request_interval_s": 0.5,
+      "reconnect_every": 0,
+      "reconnect_source": "hold",
+      "cell_id": "time-rate-window-044",
+      "ideal_records_ok": 19,
+      "planned": 1,
+      "completed": 1,
+      "valid": 1,
+      "successes": 0,
+      "success_rate": 0.0,
+      "success_wilson95": [
+        0,
+        0.7934506856227626
+      ],
+      "invalid": 0,
+      "missing": 0,
+      "max_body_discrepancy": 0.0,
+      "complete_deliveries": 0,
+      "successes_99": 0,
+      "delivery_fraction_all_valid_runs": {
+        "n": 1,
+        "mean": 0.6129032258064516,
+        "median": 0.6129032258064516,
+        "min": 0.6129032258064516,
+        "max": 0.6129032258064516
+      },
+      "duration_s_all_valid_runs": {
+        "n": 1,
+        "mean": 15.514549579995219,
+        "median": 15.514549579995219,
+        "min": 15.514549579995219,
+        "max": 15.514549579995219
+      },
+      "clean_bytes_among_complete": null,
+      "dirty_bytes_among_complete": null,
+      "clean_addresses_among_complete": null,
+      "clean_bytes_among_successes": null,
+      "dirty_bytes_among_successes": null,
+      "clean_addresses_among_successes": null,
+      "clean_share_among_successes": null,
+      "addresses_used_among_successes": null,
+      "tunnel_bytes_among_successes": null,
+      "transfer_usd_among_successes": null,
+      "own_path_low_usd_among_successes": null,
+      "own_path_high_usd_among_successes": null,
+      "dedicated_address_month_usd_among_successes": null,
+      "addresses_per_session_among_successes": null,
+      "addresses_used_all_valid_runs": {
+        "n": 1,
+        "mean": 1,
+        "median": 1,
+        "min": 1,
+        "max": 1
+      },
+      "tunnel_bytes_all_valid_runs": {
+        "n": 1,
+        "mean": 148623,
+        "median": 148623,
+        "min": 148623,
+        "max": 148623
+      },
+      "transfer_usd_all_valid_runs": {
+        "n": 1,
+        "mean": 0.00021550335,
+        "median": 0.00021550335,
+        "min": 0.00021550335,
+        "max": 0.00021550335
+      },
+      "observed_sessions_all_valid_runs": 1,
+      "mixed_source_sessions_all_valid_runs": 0
+    },
+    {
+      "block": "rate-window",
+      "workload": "scrape",
+      "defender": "bind",
+      "routing": "R-clean-stick",
+      "sessions": 1,
+      "count": 31,
+      "body_bytes": 1024,
+      "manifest_bytes": 32,
+      "reuse": 10,
+      "limit": 10,
+      "window_s": 10,
+      "request_interval_s": 0.5,
+      "reconnect_every": 0,
+      "reconnect_source": "hold",
+      "cell_id": "time-rate-window-045",
+      "ideal_records_ok": 19,
+      "planned": 1,
+      "completed": 1,
+      "valid": 1,
+      "successes": 0,
+      "success_rate": 0.0,
+      "success_wilson95": [
+        0,
+        0.7934506856227626
+      ],
+      "invalid": 0,
+      "missing": 0,
+      "max_body_discrepancy": 0.0,
+      "complete_deliveries": 0,
+      "successes_99": 0,
+      "delivery_fraction_all_valid_runs": {
+        "n": 1,
+        "mean": 0.6129032258064516,
+        "median": 0.6129032258064516,
+        "min": 0.6129032258064516,
+        "max": 0.6129032258064516
+      },
+      "duration_s_all_valid_runs": {
+        "n": 1,
+        "mean": 15.515167335994192,
+        "median": 15.515167335994192,
+        "min": 15.515167335994192,
+        "max": 15.515167335994192
+      },
+      "clean_bytes_among_complete": null,
+      "dirty_bytes_among_complete": null,
+      "clean_addresses_among_complete": null,
+      "clean_bytes_among_successes": null,
+      "dirty_bytes_among_successes": null,
+      "clean_addresses_among_successes": null,
+      "clean_share_among_successes": null,
+      "addresses_used_among_successes": null,
+      "tunnel_bytes_among_successes": null,
+      "transfer_usd_among_successes": null,
+      "own_path_low_usd_among_successes": null,
+      "own_path_high_usd_among_successes": null,
+      "dedicated_address_month_usd_among_successes": null,
+      "addresses_per_session_among_successes": null,
+      "addresses_used_all_valid_runs": {
+        "n": 1,
+        "mean": 1,
+        "median": 1,
+        "min": 1,
+        "max": 1
+      },
+      "tunnel_bytes_all_valid_runs": {
+        "n": 1,
+        "mean": 56908,
+        "median": 56908,
+        "min": 56908,
+        "max": 56908
+      },
+      "transfer_usd_all_valid_runs": {
+        "n": 1,
+        "mean": 8.25166e-05,
+        "median": 8.25166e-05,
+        "min": 8.25166e-05,
+        "max": 8.25166e-05
+      },
+      "observed_sessions_all_valid_runs": 1,
+      "mixed_source_sessions_all_valid_runs": 0
+    },
+    {
+      "block": "rate-window",
+      "workload": "scrape",
+      "defender": "bind",
+      "routing": "R-clean-rot",
+      "sessions": 1,
+      "count": 31,
+      "body_bytes": 1024,
+      "manifest_bytes": 32,
+      "reuse": 1,
+      "limit": 10,
+      "window_s": 10,
+      "request_interval_s": 0.5,
+      "reconnect_every": 0,
+      "reconnect_source": "hold",
+      "cell_id": "time-rate-window-046",
+      "ideal_records_ok": 0,
+      "planned": 1,
+      "completed": 1,
+      "valid": 1,
+      "successes": 0,
+      "success_rate": 0.0,
+      "success_wilson95": [
+        0,
+        0.7934506856227626
+      ],
+      "invalid": 0,
+      "missing": 0,
+      "max_body_discrepancy": 0.0,
+      "complete_deliveries": 0,
+      "successes_99": 0,
+      "delivery_fraction_all_valid_runs": {
+        "n": 1,
+        "mean": 0.0,
+        "median": 0.0,
+        "min": 0.0,
+        "max": 0.0
+      },
+      "duration_s_all_valid_runs": {
+        "n": 1,
+        "mean": 15.515980250987923,
+        "median": 15.515980250987923,
+        "min": 15.515980250987923,
+        "max": 15.515980250987923
+      },
+      "clean_bytes_among_complete": null,
+      "dirty_bytes_among_complete": null,
+      "clean_addresses_among_complete": null,
+      "clean_bytes_among_successes": null,
+      "dirty_bytes_among_successes": null,
+      "clean_addresses_among_successes": null,
+      "clean_share_among_successes": null,
+      "addresses_used_among_successes": null,
+      "tunnel_bytes_among_successes": null,
+      "transfer_usd_among_successes": null,
+      "own_path_low_usd_among_successes": null,
+      "own_path_high_usd_among_successes": null,
+      "dedicated_address_month_usd_among_successes": null,
+      "addresses_per_session_among_successes": null,
+      "addresses_used_all_valid_runs": {
+        "n": 1,
+        "mean": 32,
+        "median": 32,
+        "min": 32,
+        "max": 32
+      },
+      "tunnel_bytes_all_valid_runs": {
+        "n": 1,
+        "mean": 129047,
+        "median": 129047,
+        "min": 129047,
+        "max": 129047
+      },
+      "transfer_usd_all_valid_runs": {
+        "n": 1,
+        "mean": 0.00018711815,
+        "median": 0.00018711815,
+        "min": 0.00018711815,
+        "max": 0.00018711815
+      },
+      "observed_sessions_all_valid_runs": 1,
+      "mixed_source_sessions_all_valid_runs": 1
+    },
+    {
+      "block": "rate-window",
+      "workload": "scrape",
+      "defender": "bind",
+      "routing": "R-clean-rot",
+      "sessions": 1,
+      "count": 31,
+      "body_bytes": 1024,
+      "manifest_bytes": 32,
+      "reuse": 10,
+      "limit": 10,
+      "window_s": 10,
+      "request_interval_s": 0.5,
+      "reconnect_every": 0,
+      "reconnect_source": "hold",
+      "cell_id": "time-rate-window-047",
+      "ideal_records_ok": 0,
+      "planned": 1,
+      "completed": 1,
+      "valid": 1,
+      "successes": 0,
+      "success_rate": 0.0,
+      "success_wilson95": [
+        0,
+        0.7934506856227626
+      ],
+      "invalid": 0,
+      "missing": 0,
+      "max_body_discrepancy": 0.0,
+      "complete_deliveries": 0,
+      "successes_99": 0,
+      "delivery_fraction_all_valid_runs": {
+        "n": 1,
+        "mean": 0.0,
+        "median": 0.0,
+        "min": 0.0,
+        "max": 0.0
+      },
+      "duration_s_all_valid_runs": {
+        "n": 1,
+        "mean": 15.514875487002428,
+        "median": 15.514875487002428,
+        "min": 15.514875487002428,
+        "max": 15.514875487002428
+      },
+      "clean_bytes_among_complete": null,
+      "dirty_bytes_among_complete": null,
+      "clean_addresses_among_complete": null,
+      "clean_bytes_among_successes": null,
+      "dirty_bytes_among_successes": null,
+      "clean_addresses_among_successes": null,
+      "clean_share_among_successes": null,
+      "addresses_used_among_successes": null,
+      "tunnel_bytes_among_successes": null,
+      "transfer_usd_among_successes": null,
+      "own_path_low_usd_among_successes": null,
+      "own_path_high_usd_among_successes": null,
+      "dedicated_address_month_usd_among_successes": null,
+      "addresses_per_session_among_successes": null,
+      "addresses_used_all_valid_runs": {
+        "n": 1,
+        "mean": 5,
+        "median": 5,
+        "min": 5,
+        "max": 5
+      },
+      "tunnel_bytes_all_valid_runs": {
+        "n": 1,
+        "mean": 37332,
+        "median": 37332,
+        "min": 37332,
+        "max": 37332
+      },
+      "transfer_usd_all_valid_runs": {
+        "n": 1,
+        "mean": 5.41314e-05,
+        "median": 5.41314e-05,
+        "min": 5.41314e-05,
+        "max": 5.41314e-05
+      },
+      "observed_sessions_all_valid_runs": 1,
+      "mixed_source_sessions_all_valid_runs": 1
+    }
+  ],
+  "h1_comparisons": [
+    {
+      "workload": "video",
+      "defender": "every",
+      "challenger": "R-split",
+      "one_sided_fisher_p": null
+    },
+    {
+      "workload": "video",
+      "defender": "bind",
+      "challenger": "R-split",
+      "one_sided_fisher_p": null
+    },
+    {
+      "workload": "video",
+      "defender": "bind",
+      "challenger": "R-clean-rot",
+      "one_sided_fisher_p": null
+    },
+    {
+      "workload": "scrape",
+      "defender": "every",
+      "challenger": "R-split",
+      "one_sided_fisher_p": null
+    },
+    {
+      "workload": "scrape",
+      "defender": "bind",
+      "challenger": "R-split",
+      "one_sided_fisher_p": null
+    },
+    {
+      "workload": "scrape",
+      "defender": "bind",
+      "challenger": "R-clean-rot",
+      "one_sided_fisher_p": null
+    }
+  ]
+}

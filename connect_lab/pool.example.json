@@ -1,0 +1,12 @@
+{
+  "exit_prefix": "2001:db8:100:1::/64",
+  "byte_budget": 230000000000,
+  "idle_timeout_s": 35,
+  "log": "pool-tunnels.jsonl",
+  "listeners": {"clean-stick": 3128, "clean-rot": 3129, "dirty-stick": 3130},
+  "targets": {
+    "login.lab.example": {"ip": "2001:db8:200:1::10", "port": 443},
+    "manifest.lab.example": {"ip": "2001:db8:200:1::10", "port": 443},
+    "seg.lab.example": {"ip": "2001:db8:200:1::10", "port": 443}
+  }
+}

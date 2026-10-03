@@ -1,0 +1,35 @@
+# Allowlist the public repository; private working history stays on disk.
+/*
+!/.gitignore
+!/.gitattributes
+!/README.md
+!/RUN-LAB.md
+!/RESULTS.md
+!/SENSITIVITY.md
+!/TEMPORAL.md
+!/preregistration.md
+!/requirements-dev.txt
+!/requirements-plots.txt
+!/reproduce.py
+!/audit_results.py
+!/connect_lab/
+!/inputs/
+!/published/
+
+# Secrets, deployed configurations, per-attempt logs and generated output.
+**/__pycache__/
+**/test-work-*/
+**/*.py[cod]
+**/*.token
+**/*.pem
+**/*.key
+**/*.jsonl
+**/.env*
+**/origin.json
+**/campaign.json
+**/env.json
+**/ndppd-lab.conf
+**/nonlocal-bind.before
+**/.DS_Store
+# Root results/, lab-config/, analysis-*/, output/, plans and archives are
+# excluded by the root allowlist, even after their names change.
